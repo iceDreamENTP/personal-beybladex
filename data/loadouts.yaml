@@ -58,10 +58,10 @@ actual_loadouts:
     blade_instance_id: bbx-004-blade-stock
     ratchet_instance_id: bbx-004-ratchet-stock
     bit_instance_id: bbx-004-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
+    blade: Phoenix Wing
+    ratchet: 5-80
+    bit: H
+    duplicate_check_status: "已確認為 bbx-004 的原廠零件實例；未與其他 actual 配裝共用同一個 Ratchet 或 Bit 實例。"
     notes:
       - 主力候選
       - 最喜歡的鳳凰

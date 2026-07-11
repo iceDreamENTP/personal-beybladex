@@ -38,6 +38,7 @@ records:
     purchase_reason: unknown
   - item_id: bbx-004
     name_zh: 藍鳳凰
+    product_code: BX-35-05
     status: owned
     purchase_price_twd: 6000
     purchase_order: 4

@@ -44,14 +44,15 @@ stock_part_sets:
     notes: []
   - item_id: bbx-004
     source_name_zh: 藍鳳凰
+    product_code: BX-35-05
     status: owned
     configuration: stock
     blade_instance_id: bbx-004-blade-stock
     ratchet_instance_id: bbx-004-ratchet-stock
     bit_instance_id: bbx-004-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    blade: Phoenix Wing
+    ratchet: 5-80
+    bit: H
     notes:
       - 主力候選
       - 最喜歡的鳳凰

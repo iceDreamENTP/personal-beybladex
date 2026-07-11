@@ -74,19 +74,19 @@ items:
     notes: []
   - item_id: bbx-004
     name_zh: 藍鳳凰
-    product_code: unknown
+    product_code: BX-35-05
     status: owned
     purchase_order: 4
     ordered_order: unknown
     purchase_price_twd: 6000
     configuration: stock
     stock_parts:
-      blade: unknown
-      ratchet: unknown
-      bit: unknown
-    random_variant: false
-    possible_variants: unknown
-    confirmed_variant: unknown
+      blade: Phoenix Wing
+      ratchet: 5-80
+      bit: H
+    random_variant: true
+    possible_variants: 6
+    confirmed_variant: BX-35-05
     purchase_reason: unknown
     main_roster_candidate: true
     notes:

@@ -5,7 +5,9 @@
 ## 1. 藍鳳凰
 
 - 狀態：owned
+- product_code：BX-35-05
 - 配置：stock
+- 原廠零件：Phoenix Wing 5-80H
 - 配裝標示：actual
 - 定位：高速攻擊
 - 特色：

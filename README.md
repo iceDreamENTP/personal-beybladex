@@ -14,13 +14,13 @@
 
 ## 已持有
 
-| 購入順序 | 名稱 | 狀態 | 花費 | 配置 | 備註 |
-| ---: | --- | --- | ---: | --- | --- |
-| 1 | 紅鳳凰 | owned | 1700 TWD | stock |  |
-| 2 | 隕星龍 | owned | 300 TWD | stock | 左旋 |
-| 3 | 騎士堡壘 | owned | 1000 TWD | stock |  |
-| 4 | 藍鳳凰 | owned | 6000 TWD | stock | 主力候選；最喜歡的鳳凰 |
-| 5 | 天蠍 | owned | 1600 TWD | stock | 主力候選 |
+| 購入順序 | 型號 | 名稱 | 狀態 | 花費 | 配置 | 原廠零件 | 備註 |
+| ---: | --- | --- | --- | ---: | --- | --- | --- |
+| 1 | unknown | 紅鳳凰 | owned | 1700 TWD | stock | unknown |  |
+| 2 | unknown | 隕星龍 | owned | 300 TWD | stock | unknown | 左旋 |
+| 3 | unknown | 騎士堡壘 | owned | 1000 TWD | stock | unknown |  |
+| 4 | BX-35-05 | 藍鳳凰 | owned | 6000 TWD | stock | Phoenix Wing 5-80H | 主力候選；最喜歡的鳳凰 |
+| 5 | unknown | 天蠍 | owned | 1600 TWD | stock | unknown | 主力候選 |
 
 ## 已訂購
 
