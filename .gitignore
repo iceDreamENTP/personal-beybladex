@@ -1,0 +1,24 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Local secrets must never be committed
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*token*
+*secret*
+secrets/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp

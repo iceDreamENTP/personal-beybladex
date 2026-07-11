@@ -1,0 +1,129 @@
+schema_version: 1
+last_updated: 2026-07-11
+policy:
+  actual_definition: "actual 代表目前真的組得出來。"
+  theoretical_definition: "theoretical 代表理論配置、待到貨、待確認版本或待確認零件。"
+  duplicate_rule: "同一個 Ratchet 或 Bit 不可同時出現在兩個 actual 實際配裝。"
+  current_configuration: "目前所有已記錄配置皆為 stock。"
+actual_loadouts:
+  - loadout_id: actual-stock-bbx-001
+    name_zh: 紅鳳凰 stock
+    type: actual
+    source_item_id: bbx-001
+    source_status: owned
+    configuration: stock
+    blade_instance_id: bbx-001-blade-stock
+    ratchet_instance_id: bbx-001-ratchet-stock
+    bit_instance_id: bbx-001-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
+    notes: []
+  - loadout_id: actual-stock-bbx-002
+    name_zh: 隕星龍 stock
+    type: actual
+    source_item_id: bbx-002
+    source_status: owned
+    configuration: stock
+    blade_instance_id: bbx-002-blade-stock
+    ratchet_instance_id: bbx-002-ratchet-stock
+    bit_instance_id: bbx-002-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
+    notes:
+      - 左旋
+  - loadout_id: actual-stock-bbx-003
+    name_zh: 騎士堡壘 stock
+    type: actual
+    source_item_id: bbx-003
+    source_status: owned
+    configuration: stock
+    blade_instance_id: bbx-003-blade-stock
+    ratchet_instance_id: bbx-003-ratchet-stock
+    bit_instance_id: bbx-003-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
+    notes: []
+  - loadout_id: actual-stock-bbx-004
+    name_zh: 藍鳳凰 stock
+    type: actual
+    source_item_id: bbx-004
+    source_status: owned
+    configuration: stock
+    blade_instance_id: bbx-004-blade-stock
+    ratchet_instance_id: bbx-004-ratchet-stock
+    bit_instance_id: bbx-004-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
+    notes:
+      - 主力候選
+      - 最喜歡的鳳凰
+  - loadout_id: actual-stock-bbx-005
+    name_zh: 天蠍 stock
+    type: actual
+    source_item_id: bbx-005
+    source_status: owned
+    configuration: stock
+    blade_instance_id: bbx-005-blade-stock
+    ratchet_instance_id: bbx-005-ratchet-stock
+    bit_instance_id: bbx-005-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
+    notes:
+      - 主力候選
+theoretical_loadouts:
+  - loadout_id: theoretical-stock-bbx-007
+    name_zh: 鯨魚 stock
+    type: theoretical
+    source_item_id: bbx-007
+    source_status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    reason_theoretical: "已訂購但尚未收到；隨機版本未確認。"
+    notes:
+      - 主力候選
+  - loadout_id: theoretical-stock-bbx-008
+    name_zh: 狐狸 stock
+    type: theoretical
+    source_item_id: bbx-008
+    source_status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    reason_theoretical: "已訂購但尚未收到；隨機版本未確認。"
+    notes:
+      - 主力候選
+  - loadout_id: theoretical-stock-bbx-009
+    name_zh: 女武神 stock
+    type: theoretical
+    source_item_id: bbx-009
+    source_status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    reason_theoretical: "已訂購但尚未收到。"
+    notes:
+      - UX-20
+      - 主力候選

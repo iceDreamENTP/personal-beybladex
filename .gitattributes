@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.md text eol=lf working-tree-encoding=UTF-8
+*.yaml text eol=lf working-tree-encoding=UTF-8
+LICENSE text eol=lf working-tree-encoding=UTF-8
+.gitignore text eol=lf working-tree-encoding=UTF-8

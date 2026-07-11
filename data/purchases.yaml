@@ -1,0 +1,109 @@
+schema_version: 1
+last_updated: 2026-07-11
+currency: TWD
+summary:
+  owned_spending_twd: 10600
+  ordered_spending_twd: 6200
+  total_spending_twd: 16800
+records:
+  - item_id: bbx-001
+    name_zh: 紅鳳凰
+    status: owned
+    purchase_price_twd: 1700
+    purchase_order: 1
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-002
+    name_zh: 隕星龍
+    status: owned
+    purchase_price_twd: 300
+    purchase_order: 2
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-003
+    name_zh: 騎士堡壘
+    status: owned
+    purchase_price_twd: 1000
+    purchase_order: 3
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-004
+    name_zh: 藍鳳凰
+    status: owned
+    purchase_price_twd: 6000
+    purchase_order: 4
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-005
+    name_zh: 天蠍
+    status: owned
+    purchase_price_twd: 1600
+    purchase_order: 5
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-006
+    name_zh: 獨角獸
+    status: ordered
+    purchase_price_twd: 700
+    purchase_order: unknown
+    ordered_order: 1
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: 為了零件
+  - item_id: bbx-007
+    name_zh: 鯨魚
+    status: ordered
+    purchase_price_twd: 1000
+    purchase_order: unknown
+    ordered_order: 2
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-008
+    name_zh: 狐狸
+    status: ordered
+    purchase_price_twd: 1100
+    purchase_order: unknown
+    ordered_order: 3
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-009
+    name_zh: 女武神
+    product_code: UX-20
+    status: ordered
+    purchase_price_twd: 2100
+    purchase_order: unknown
+    ordered_order: 4
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: unknown
+  - item_id: bbx-010
+    name_zh: 龍王
+    status: ordered
+    purchase_price_twd: 1300
+    purchase_order: unknown
+    ordered_order: 5
+    purchase_date: unknown
+    seller: unknown
+    received_date: unknown
+    purchase_reason: 為了零件

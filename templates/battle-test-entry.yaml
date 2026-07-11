@@ -1,0 +1,12 @@
+- test_id: unknown
+  test_date: unknown
+  location: unknown
+  ruleset: unknown
+  stadium: unknown
+  opponent: unknown
+  loadout_id: unknown
+  loadout_type: unknown
+  result: unknown
+  observed_strengths: []
+  observed_weaknesses: []
+  notes: []

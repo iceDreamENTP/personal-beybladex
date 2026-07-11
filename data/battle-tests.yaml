@@ -1,0 +1,6 @@
+schema_version: 1
+last_updated: 2026-07-11
+policy:
+  unknown_policy: "未記錄或未確認資訊填 unknown。"
+  loadout_policy: "每筆實戰紀錄必須標示 actual 或 theoretical。"
+battle_tests: []

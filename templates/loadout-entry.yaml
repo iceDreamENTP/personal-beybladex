@@ -1,0 +1,15 @@
+- loadout_id: unknown
+  name_zh: unknown
+  type: unknown
+  source_item_id: unknown
+  source_status: unknown
+  configuration: stock
+  blade_instance_id: unknown
+  ratchet_instance_id: unknown
+  bit_instance_id: unknown
+  blade: unknown
+  ratchet: unknown
+  bit: unknown
+  duplicate_check_status: unknown
+  reason_theoretical: unknown
+  notes: []

@@ -1,0 +1,134 @@
+schema_version: 1
+last_updated: 2026-07-11
+currency: TWD
+policy:
+  configuration: stock
+  extra_parts_purchased: false
+  unknown_policy: "未確認的 Blade / Ratchet / Bit 名稱一律填 unknown。"
+  actual_loadout_policy: "建立 actual 配裝時，不得重複使用同一個 Ratchet 或 Bit。"
+known_loose_parts: []
+stock_part_sets:
+  - item_id: bbx-001
+    source_name_zh: 紅鳳凰
+    status: owned
+    configuration: stock
+    blade_instance_id: bbx-001-blade-stock
+    ratchet_instance_id: bbx-001-ratchet-stock
+    bit_instance_id: bbx-001-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes: []
+  - item_id: bbx-002
+    source_name_zh: 隕星龍
+    status: owned
+    configuration: stock
+    blade_instance_id: bbx-002-blade-stock
+    ratchet_instance_id: bbx-002-ratchet-stock
+    bit_instance_id: bbx-002-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - 左旋
+  - item_id: bbx-003
+    source_name_zh: 騎士堡壘
+    status: owned
+    configuration: stock
+    blade_instance_id: bbx-003-blade-stock
+    ratchet_instance_id: bbx-003-ratchet-stock
+    bit_instance_id: bbx-003-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes: []
+  - item_id: bbx-004
+    source_name_zh: 藍鳳凰
+    status: owned
+    configuration: stock
+    blade_instance_id: bbx-004-blade-stock
+    ratchet_instance_id: bbx-004-ratchet-stock
+    bit_instance_id: bbx-004-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - 主力候選
+      - 最喜歡的鳳凰
+  - item_id: bbx-005
+    source_name_zh: 天蠍
+    status: owned
+    configuration: stock
+    blade_instance_id: bbx-005-blade-stock
+    ratchet_instance_id: bbx-005-ratchet-stock
+    bit_instance_id: bbx-005-bit-stock
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - 主力候選
+  - item_id: bbx-006
+    source_name_zh: 獨角獸
+    status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - 為了零件
+  - item_id: bbx-007
+    source_name_zh: 鯨魚
+    status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - random_variant true
+      - possible_variants 3
+      - 主力候選
+  - item_id: bbx-008
+    source_name_zh: 狐狸
+    status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - random_variant true
+      - possible_variants 3
+      - 主力候選
+  - item_id: bbx-009
+    source_name_zh: 女武神
+    product_code: UX-20
+    status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - 主力候選
+  - item_id: bbx-010
+    source_name_zh: 龍王
+    status: ordered
+    configuration: stock
+    blade_instance_id: unknown
+    ratchet_instance_id: unknown
+    bit_instance_id: unknown
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+    notes:
+      - 為了零件

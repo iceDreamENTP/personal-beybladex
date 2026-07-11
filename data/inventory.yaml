@@ -1,0 +1,206 @@
+schema_version: 1
+last_updated: 2026-07-11
+currency: TWD
+rules:
+  unknown_policy: "未確認資料一律填 unknown，不自行猜測。"
+  ordered_policy: "已訂購但尚未收到的商品不得假設是哪個版本。"
+  configuration_policy: "目前所有零件皆為原廠配置 stock。"
+  extra_parts_policy: "尚未購買任何額外零件。"
+summary:
+  counts:
+    owned: 5
+    ordered: 5
+    wishlist: 0
+    total: 10
+  spending_twd:
+    owned: 10600
+    ordered: 6200
+    total: 16800
+items:
+  - item_id: bbx-001
+    name_zh: 紅鳳凰
+    product_code: unknown
+    status: owned
+    purchase_order: 1
+    ordered_order: unknown
+    purchase_price_twd: 1700
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: false
+    notes: []
+  - item_id: bbx-002
+    name_zh: 隕星龍
+    product_code: unknown
+    status: owned
+    purchase_order: 2
+    ordered_order: unknown
+    purchase_price_twd: 300
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: false
+    notes:
+      - 左旋
+  - item_id: bbx-003
+    name_zh: 騎士堡壘
+    product_code: unknown
+    status: owned
+    purchase_order: 3
+    ordered_order: unknown
+    purchase_price_twd: 1000
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: false
+    notes: []
+  - item_id: bbx-004
+    name_zh: 藍鳳凰
+    product_code: unknown
+    status: owned
+    purchase_order: 4
+    ordered_order: unknown
+    purchase_price_twd: 6000
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: true
+    notes:
+      - 主力候選
+      - 最喜歡的鳳凰
+  - item_id: bbx-005
+    name_zh: 天蠍
+    product_code: unknown
+    status: owned
+    purchase_order: 5
+    ordered_order: unknown
+    purchase_price_twd: 1600
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: true
+    notes:
+      - 主力候選
+  - item_id: bbx-006
+    name_zh: 獨角獸
+    product_code: unknown
+    status: ordered
+    purchase_order: unknown
+    ordered_order: 1
+    purchase_price_twd: 700
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: 為了零件
+    main_roster_candidate: false
+    notes: []
+  - item_id: bbx-007
+    name_zh: 鯨魚
+    product_code: unknown
+    status: ordered
+    purchase_order: unknown
+    ordered_order: 2
+    purchase_price_twd: 1000
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: true
+    possible_variants: 3
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: true
+    notes:
+      - 主力候選
+  - item_id: bbx-008
+    name_zh: 狐狸
+    product_code: unknown
+    status: ordered
+    purchase_order: unknown
+    ordered_order: 3
+    purchase_price_twd: 1100
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: true
+    possible_variants: 3
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: true
+    notes:
+      - 主力候選
+  - item_id: bbx-009
+    name_zh: 女武神
+    product_code: UX-20
+    status: ordered
+    purchase_order: unknown
+    ordered_order: 4
+    purchase_price_twd: 2100
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    main_roster_candidate: true
+    notes:
+      - 主力候選
+  - item_id: bbx-010
+    name_zh: 龍王
+    product_code: unknown
+    status: ordered
+    purchase_order: unknown
+    ordered_order: 5
+    purchase_price_twd: 1300
+    configuration: stock
+    stock_parts:
+      blade: unknown
+      ratchet: unknown
+      bit: unknown
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: 為了零件
+    main_roster_candidate: false
+    notes: []

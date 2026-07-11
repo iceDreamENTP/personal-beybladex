@@ -1,0 +1,18 @@
+- item_id: unknown
+  name_zh: unknown
+  product_code: unknown
+  status: unknown
+  purchase_order: unknown
+  ordered_order: unknown
+  purchase_price_twd: unknown
+  configuration: stock
+  stock_parts:
+    blade: unknown
+    ratchet: unknown
+    bit: unknown
+  random_variant: false
+  possible_variants: unknown
+  confirmed_variant: unknown
+  purchase_reason: unknown
+  main_roster_candidate: false
+  notes: []
