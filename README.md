@@ -4,6 +4,15 @@
 
 本 repo 是公開資料庫，不應包含個資、Token、Secret、帳號憑證或私人聯絡資訊。所有文字檔使用 UTF-8，說明文件使用繁體中文。
 
+## 四層配置模型
+
+| 代號 | 意義 | 定義 |
+|---|---|---|
+| `org` | Original | Takara Tomy 原廠配置與官方設計策略 |
+| `opt` | Optimal | 純粹依物理結構推導的單顆理論最佳配置 |
+| `dck` | Deck | 固定六機賽制下，零件不重複的永久配置 |
+| `tmp` | Temporary | 依目前已實際擁有的零件可組出的暫時配置 |
+
 ## 收藏總覽
 
 | 類別 | 數量 |
@@ -12,37 +21,35 @@
 | 已訂購 | 5 顆 |
 | 總數 | 10 顆 |
 
-## 已持有
+## 主 Inventory
 
-| 購入順序 | 型號 | 名稱 | 狀態 | 花費 | 配置 | 原廠零件 | 備註 |
-| ---: | --- | --- | --- | ---: | --- | --- | --- |
-| 1 | unknown | 紅鳳凰 | owned | 1700 TWD | stock | unknown |  |
-| 2 | unknown | 隕星龍 | owned | 300 TWD | stock | unknown | 左旋 |
-| 3 | unknown | 騎士堡壘 | owned | 1000 TWD | stock | unknown |  |
-| 4 | BX-35-05 | 藍鳳凰 | owned | 6000 TWD | stock | Phoenix Wing 5-80H | 主力候選；最喜歡的鳳凰 |
-| 5 | unknown | 天蠍 | owned | 1600 TWD | stock | unknown | 主力候選 |
+完整表格見 [docs/collection.md](docs/collection.md)。
 
-## 已訂購
+| 型號 | 中文名 | Blade | 狀態 | 備註 | 完成度 |
+|---|---|---|---|---|---|
+| BX-23 | 紅鳳凰 | Phoenix Wing | 擁有 | 備選 | ⭐☆☆☆☆ |
+| UX-17 | 隕星龍 | Meteor Dragoon | 擁有 | 左旋、固定六機順位6 | ⭐☆☆☆☆ |
+| CX-14 | 騎士堡壘 | Knight Fortress GV | 擁有 | 備選 | ⭐☆☆☆☆ |
+| BX-35-05 | 藍鳳凰 | Phoenix Wing | 擁有 | 主力、最喜歡的鳳凰、固定六機順位1 | ⭐☆☆☆☆ |
+| UX-14 | 天蠍 | Scorpio Spear | 擁有 | 主力、固定六機順位3 | ⭐⭐⭐⭐☆ |
+| BX-26 | 獨角獸 | Unicorn Sting | 路上 | 零件、備選 | ⭐☆☆☆☆ |
+| BX-36 | 鯨魚 | Whale Wave | 路上 | 主力、固定六機順位4、隨機包3款 | ⭐☆☆☆☆ |
+| CX-06 | 狐狸 | Fox Brush J | 路上 | 主力、固定六機順位5、隨機包3款 | ⭐☆☆☆☆ |
+| UX-20 | 女武神 | Glory Valkyrie | 路上 | 主力、固定六機順位2 | ⭐☆☆☆☆ |
+| CX-13 | 龍王 | Bahamut Blitz BK | 路上 | 零件、備選 | ⭐☆☆☆☆ |
 
-| 訂購順序 | 名稱 | 狀態 | 花費 | 配置 | 隨機款 | 備註 |
-| ---: | --- | --- | ---: | --- | --- | --- |
-| 1 | 獨角獸 | ordered | 700 TWD | stock | 否 | 為了零件 |
-| 2 | 鯨魚 | ordered | 1000 TWD | stock | 是，3 種可能 | 主力候選 |
-| 3 | 狐狸 | ordered | 1100 TWD | stock | 是，3 種可能 | 主力候選 |
-| 4 | 女武神 | ordered | 2100 TWD | stock | 否 | UX-20；主力候選 |
-| 5 | 龍王 | ordered | 1300 TWD | stock | 否 | 為了零件 |
+## 固定六機
 
-## 五顆主力
+完整規則見 [docs/main-roster.md](docs/main-roster.md)。
 
-目前主力戰備庫固定為五顆，但不是固定三顆 Deck。每次比賽可依 Meta、對手與場地自由挑選三顆。
-
-| 名稱 | 狀態 | 定位 | 特色 | 目前可用性 |
-| --- | --- | --- | --- | --- |
-| 藍鳳凰 | owned | 高速攻擊 | 擊飛、爆體、主動進攻 | actual |
-| 狐狸 | ordered | 技巧型攻擊 | 連擊、爆體、干擾 | theoretical，待到貨確認 |
-| 天蠍 | owned | 均衡 | 能攻、能守、配裝彈性最高 | actual |
-| 鯨魚 | ordered | 重量攻擊 | 正面硬碰、擊飛、壓制 | theoretical，待到貨確認 |
-| 女武神 | ordered | 爆發攻擊 | 特殊機構、高爆發、奇襲 | theoretical，待到貨確認 |
+| 順位 | Blade | dck鎖 | dck軸 | 定位 | 完成 |
+|---|---|---|---|---|---|
+| 1 | 藍鳳凰 |  |  | 第一主攻、核心主力 | ☐ |
+| 2 | 女武神 |  |  | 第二主攻、Bound 爆發擊飛 | ☐ |
+| 3 | 天蠍 |  |  | 守分、穩定收尾 | ☐ |
+| 4 | 鯨魚 |  |  | 重量壓制、重型攻擊 | ☐ |
+| 5 | 狐狸 |  |  | 連續追擊、廣範圍連打 | ☐ |
+| 6 | 隕星龍 |  |  | 左旋特化、針對右旋環境 | ☐ |
 
 ## 花費統計
 
@@ -83,13 +90,13 @@ personal-beybladex/
 1. 複製 `templates/beyblade-entry.yaml` 的格式。
 2. 新增到 `data/inventory.yaml` 的 `items`。
 3. 同步更新 `data/purchases.yaml`。
-4. 若已確認 Blade / Ratchet / Bit，才更新 `data/parts.yaml`；未知資訊一律填 `unknown`。
-5. 需要納入主力時，再更新 `docs/main-roster.md` 與 `data/loadouts.yaml`。
+4. 若已確認 `org` 的 Blade / Ratchet / Bit，更新 `data/parts.yaml`；未知資訊一律填 `unknown`。
+5. 需要納入固定六機時，再更新 `docs/main-roster.md` 與 `data/loadouts.yaml`。
 6. 更新 README 的收藏數量與花費統計。
 
 ## 如何新增一次實戰紀錄
 
 1. 複製 `templates/battle-test-entry.yaml` 的格式。
 2. 新增到 `data/battle-tests.yaml` 的 `battle_tests`。
-3. 實際使用的配裝必須能在 `data/loadouts.yaml` 找到，並標示 `actual` 或 `theoretical`。
-4. 若測試結果讓主力順位或定位改變，同步更新 `docs/main-roster.md`。
+3. 實戰使用的配裝必須標示 `org`、`opt`、`dck` 或 `tmp`。
+4. 若測試結果讓固定六機、`opt` 或 `tmp` 改變，同步更新 `docs/main-roster.md`、`data/inventory.yaml` 與 `data/loadouts.yaml`。

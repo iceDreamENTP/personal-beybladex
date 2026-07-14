@@ -8,6 +8,7 @@ summary:
 records:
   - item_id: bbx-001
     name_zh: 紅鳳凰
+    product_code: BX-23
     status: owned
     purchase_price_twd: 1700
     purchase_order: 1
@@ -18,6 +19,7 @@ records:
     purchase_reason: unknown
   - item_id: bbx-002
     name_zh: 隕星龍
+    product_code: UX-17
     status: owned
     purchase_price_twd: 300
     purchase_order: 2
@@ -28,6 +30,7 @@ records:
     purchase_reason: unknown
   - item_id: bbx-003
     name_zh: 騎士堡壘
+    product_code: CX-14
     status: owned
     purchase_price_twd: 1000
     purchase_order: 3
@@ -49,6 +52,7 @@ records:
     purchase_reason: unknown
   - item_id: bbx-005
     name_zh: 天蠍
+    product_code: UX-14
     status: owned
     purchase_price_twd: 1600
     purchase_order: 5
@@ -59,6 +63,7 @@ records:
     purchase_reason: unknown
   - item_id: bbx-006
     name_zh: 獨角獸
+    product_code: BX-26
     status: ordered
     purchase_price_twd: 700
     purchase_order: unknown
@@ -69,6 +74,7 @@ records:
     purchase_reason: 為了零件
   - item_id: bbx-007
     name_zh: 鯨魚
+    product_code: BX-36
     status: ordered
     purchase_price_twd: 1000
     purchase_order: unknown
@@ -79,6 +85,7 @@ records:
     purchase_reason: unknown
   - item_id: bbx-008
     name_zh: 狐狸
+    product_code: CX-06
     status: ordered
     purchase_price_twd: 1100
     purchase_order: unknown
@@ -100,6 +107,7 @@ records:
     purchase_reason: unknown
   - item_id: bbx-010
     name_zh: 龍王
+    product_code: CX-13
     status: ordered
     purchase_price_twd: 1300
     purchase_order: unknown

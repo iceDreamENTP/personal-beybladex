@@ -1,129 +1,75 @@
-schema_version: 1
+schema_version: 2
 last_updated: 2026-07-11
+configuration_model:
+  org: "Original；Takara Tomy 原廠配置與官方設計策略。"
+  opt: "Optimal；單顆 Blade 依物理結構推導的理論最佳配置。"
+  dck: "Deck；固定六機賽制下，零件不重複的永久配置。"
+  tmp: "Temporary；目前已實際擁有零件可組出的暫時配置。"
 policy:
-  actual_definition: "actual 代表目前真的組得出來。"
-  theoretical_definition: "theoretical 代表理論配置、待到貨、待確認版本或待確認零件。"
-  duplicate_rule: "同一個 Ratchet 或 Bit 不可同時出現在兩個 actual 實際配裝。"
-  current_configuration: "目前所有已記錄配置皆為 stock。"
-actual_loadouts:
-  - loadout_id: actual-stock-bbx-001
-    name_zh: 紅鳳凰 stock
-    type: actual
-    source_item_id: bbx-001
-    source_status: owned
-    configuration: stock
-    blade_instance_id: bbx-001-blade-stock
-    ratchet_instance_id: bbx-001-ratchet-stock
-    bit_instance_id: bbx-001-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
-    notes: []
-  - loadout_id: actual-stock-bbx-002
-    name_zh: 隕星龍 stock
-    type: actual
-    source_item_id: bbx-002
-    source_status: owned
-    configuration: stock
-    blade_instance_id: bbx-002-blade-stock
-    ratchet_instance_id: bbx-002-ratchet-stock
-    bit_instance_id: bbx-002-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
-    notes:
-      - 左旋
-  - loadout_id: actual-stock-bbx-003
-    name_zh: 騎士堡壘 stock
-    type: actual
-    source_item_id: bbx-003
-    source_status: owned
-    configuration: stock
-    blade_instance_id: bbx-003-blade-stock
-    ratchet_instance_id: bbx-003-ratchet-stock
-    bit_instance_id: bbx-003-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
-    notes: []
-  - loadout_id: actual-stock-bbx-004
-    name_zh: 藍鳳凰 stock
-    type: actual
-    source_item_id: bbx-004
-    source_status: owned
-    configuration: stock
-    blade_instance_id: bbx-004-blade-stock
-    ratchet_instance_id: bbx-004-ratchet-stock
-    bit_instance_id: bbx-004-bit-stock
-    blade: Phoenix Wing
-    ratchet: 5-80
-    bit: H
-    duplicate_check_status: "已確認為 bbx-004 的原廠零件實例；未與其他 actual 配裝共用同一個 Ratchet 或 Bit 實例。"
-    notes:
-      - 主力候選
-      - 最喜歡的鳳凰
-  - loadout_id: actual-stock-bbx-005
-    name_zh: 天蠍 stock
-    type: actual
-    source_item_id: bbx-005
-    source_status: owned
-    configuration: stock
-    blade_instance_id: bbx-005-blade-stock
-    ratchet_instance_id: bbx-005-ratchet-stock
-    bit_instance_id: bbx-005-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    duplicate_check_status: "零件名稱 unknown；僅確認為已持有的原廠整顆配置。"
-    notes:
-      - 主力候選
-theoretical_loadouts:
-  - loadout_id: theoretical-stock-bbx-007
-    name_zh: 鯨魚 stock
-    type: theoretical
-    source_item_id: bbx-007
-    source_status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    reason_theoretical: "已訂購但尚未收到；隨機版本未確認。"
-    notes:
-      - 主力候選
-  - loadout_id: theoretical-stock-bbx-008
-    name_zh: 狐狸 stock
-    type: theoretical
-    source_item_id: bbx-008
-    source_status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    reason_theoretical: "已訂購但尚未收到；隨機版本未確認。"
-    notes:
-      - 主力候選
-  - loadout_id: theoretical-stock-bbx-009
-    name_zh: 女武神 stock
-    type: theoretical
-    source_item_id: bbx-009
-    source_status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    reason_theoretical: "已訂購但尚未收到。"
-    notes:
-      - UX-20
-      - 主力候選
+  dck_definition: "使用者預計建立的六顆固定配裝。"
+  dck_unique_rule: "固定六機之間 Ratchet 與 Bit 不重複；女武神不占用一般 Ratchet 名額。"
+  dck_pending_rule: "dck 尚未定案前，ratchet / bit / strategy 維持空白。"
+  tmp_owned_only_rule: "tmp 僅能使用目前已實際擁有且已確認的零件。"
+  random_variant_rule: "鯨魚與狐狸的主打款資訊不得視為實際取得零件。"
+  opt_rule: "opt 不依網路 META 擅自覆蓋；實測可修正 opt，但需保留理由。"
+fixed_six:
+  - rank: 1
+    item_id: bbx-004
+    blade: 藍鳳凰
+    dck:
+      ratchet: ""
+      bit: ""
+    role: 第一主攻、核心主力
+    complete: false
+  - rank: 2
+    item_id: bbx-009
+    blade: 女武神
+    dck:
+      ratchet: ""
+      bit: ""
+    role: 第二主攻、Bound 爆發擊飛
+    complete: false
+  - rank: 3
+    item_id: bbx-005
+    blade: 天蠍
+    dck:
+      ratchet: ""
+      bit: ""
+    role: 守分、穩定收尾
+    complete: false
+  - rank: 4
+    item_id: bbx-007
+    blade: 鯨魚
+    dck:
+      ratchet: ""
+      bit: ""
+    role: 重量壓制、重型攻擊
+    complete: false
+  - rank: 5
+    item_id: bbx-008
+    blade: 狐狸
+    dck:
+      ratchet: ""
+      bit: ""
+    role: 連續追擊、廣範圍連打
+    complete: false
+  - rank: 6
+    item_id: bbx-002
+    blade: 隕星龍
+    dck:
+      ratchet: ""
+      bit: ""
+    role: 左旋特化、針對右旋環境
+    complete: false
+tmp:
+  - item_id: bbx-005
+    blade: 天蠍
+    ratchet: 9-60
+    bit: Z
+    strategy: "已實測降低爆體風險，暫時可視為接近完成。"
+    source_note: "9-60 來自目前已持有零件；此 tmp 不代表紅鳳凰同時使用同一個 Ratchet。"
+    completion: "⭐⭐⭐⭐☆"
+observations:
+  - item_id: bbx-005
+    blade: 天蠍
+    note: "Scorpio Spear 原廠 0-70 Z 在使用者實測中容易被紅鳳凰直接爆體；更換為 9-60 Z 後爆體問題明顯改善，姿態更加穩定，仍保留 Z 軸攻守切換特性。"

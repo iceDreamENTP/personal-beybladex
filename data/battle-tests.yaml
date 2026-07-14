@@ -2,5 +2,5 @@ schema_version: 1
 last_updated: 2026-07-11
 policy:
   unknown_policy: "未記錄或未確認資訊填 unknown。"
-  loadout_policy: "每筆實戰紀錄必須標示 actual 或 theoretical。"
+  loadout_policy: "每筆實戰紀錄應標示使用 org / opt / dck / tmp 中哪一層配置。"
 battle_tests: []

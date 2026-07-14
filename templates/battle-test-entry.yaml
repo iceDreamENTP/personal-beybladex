@@ -4,8 +4,10 @@
   ruleset: unknown
   stadium: unknown
   opponent: unknown
-  loadout_id: unknown
-  loadout_type: unknown
+  item_id: unknown
+  config_layer: unknown
+  ratchet: unknown
+  bit: unknown
   result: unknown
   observed_strengths: []
   observed_weaknesses: []

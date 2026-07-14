@@ -1,135 +1,143 @@
-schema_version: 1
+schema_version: 2
 last_updated: 2026-07-11
 currency: TWD
 policy:
-  configuration: stock
+  configuration_model: "配裝資料統一使用 org / opt / dck / tmp。"
   extra_parts_purchased: false
-  unknown_policy: "未確認的 Blade / Ratchet / Bit 名稱一律填 unknown。"
-  actual_loadout_policy: "建立 actual 配裝時，不得重複使用同一個 Ratchet 或 Bit。"
+  ordered_policy: "路上與隨機包尚未確認的零件不得視為已持有。"
+  random_variant_policy: "隨機包尚未確認實際款式時，只能記錄主打款資訊。"
+  dck_unique_policy: "固定六機 dck 的 Ratchet 與 Bit 不可重複。"
 known_loose_parts: []
 stock_part_sets:
   - item_id: bbx-001
+    product_code: BX-23
     source_name_zh: 紅鳳凰
+    blade: Phoenix Wing
     status: owned
-    configuration: stock
-    blade_instance_id: bbx-001-blade-stock
-    ratchet_instance_id: bbx-001-ratchet-stock
-    bit_instance_id: bbx-001-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    notes: []
+    org:
+      ratchet: 9-60
+      bit: GF
+    part_instances_confirmed: true
+    notes:
+      - 備選
   - item_id: bbx-002
+    product_code: UX-17
     source_name_zh: 隕星龍
+    blade: Meteor Dragoon
     status: owned
-    configuration: stock
-    blade_instance_id: bbx-002-blade-stock
-    ratchet_instance_id: bbx-002-ratchet-stock
-    bit_instance_id: bbx-002-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    org:
+      ratchet: 3-70
+      bit: J
+    part_instances_confirmed: true
     notes:
       - 左旋
+      - 固定六機順位6
   - item_id: bbx-003
+    product_code: CX-14
     source_name_zh: 騎士堡壘
+    blade: Knight Fortress GV
     status: owned
-    configuration: stock
-    blade_instance_id: bbx-003-blade-stock
-    ratchet_instance_id: bbx-003-ratchet-stock
-    bit_instance_id: bbx-003-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
-    notes: []
+    org:
+      ratchet: 8-70
+      bit: UN
+    part_instances_confirmed: true
+    notes:
+      - 備選
   - item_id: bbx-004
-    source_name_zh: 藍鳳凰
     product_code: BX-35-05
-    status: owned
-    configuration: stock
-    blade_instance_id: bbx-004-blade-stock
-    ratchet_instance_id: bbx-004-ratchet-stock
-    bit_instance_id: bbx-004-bit-stock
+    source_name_zh: 藍鳳凰
     blade: Phoenix Wing
-    ratchet: 5-80
-    bit: H
-    notes:
-      - 主力候選
-      - 最喜歡的鳳凰
-  - item_id: bbx-005
-    source_name_zh: 天蠍
     status: owned
-    configuration: stock
-    blade_instance_id: bbx-005-blade-stock
-    ratchet_instance_id: bbx-005-ratchet-stock
-    bit_instance_id: bbx-005-bit-stock
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    org:
+      ratchet: 5-80
+      bit: H
+    part_instances_confirmed: true
     notes:
-      - 主力候選
+      - 主力
+      - 最喜歡的鳳凰
+      - 固定六機順位1
+  - item_id: bbx-005
+    product_code: UX-14
+    source_name_zh: 天蠍
+    blade: Scorpio Spear
+    status: owned
+    org:
+      ratchet: 0-70
+      bit: Z
+    part_instances_confirmed: true
+    notes:
+      - 主力
+      - 固定六機順位3
   - item_id: bbx-006
+    product_code: BX-26
     source_name_zh: 獨角獸
+    blade: Unicorn Sting
     status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    org:
+      ratchet: 5-60
+      bit: GP
+    part_instances_confirmed: false
     notes:
-      - 為了零件
+      - 零件
+      - 備選
+      - 路上，未到貨前不得視為已持有
   - item_id: bbx-007
+    product_code: BX-36
     source_name_zh: 鯨魚
+    blade: Whale Wave
     status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    random_variant: true
+    possible_variants: 3
+    confirmed_variant: unknown
+    org:
+      ratchet: "未確認；主打款5-80"
+      bit: "未確認；主打款E"
+    part_instances_confirmed: false
     notes:
-      - random_variant true
-      - possible_variants 3
-      - 主力候選
+      - 主力
+      - 固定六機順位4
+      - 隨機包3款
+      - 主打款資訊不得視為實際取得零件
   - item_id: bbx-008
+    product_code: CX-06
     source_name_zh: 狐狸
+    blade: Fox Brush J
     status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    random_variant: true
+    possible_variants: 3
+    confirmed_variant: unknown
+    org:
+      ratchet: "未確認；主打款9-70"
+      bit: "未確認；主打款GR"
+    part_instances_confirmed: false
     notes:
-      - random_variant true
-      - possible_variants 3
-      - 主力候選
+      - 主力
+      - 固定六機順位5
+      - 隨機包3款
+      - 主打款資訊不得視為實際取得零件
   - item_id: bbx-009
-    source_name_zh: 女武神
     product_code: UX-20
+    source_name_zh: 女武神
+    blade: Glory Valkyrie
     status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    org:
+      ratchet: "一體化，無獨立 Ratchet"
+      bit: LF
+    part_instances_confirmed: false
     notes:
-      - 主力候選
+      - 主力
+      - 固定六機順位2
+      - 路上，未到貨前不得視為已持有
   - item_id: bbx-010
+    product_code: CX-13
     source_name_zh: 龍王
+    blade: Bahamut Blitz BK
     status: ordered
-    configuration: stock
-    blade_instance_id: unknown
-    ratchet_instance_id: unknown
-    bit_instance_id: unknown
-    blade: unknown
-    ratchet: unknown
-    bit: unknown
+    org:
+      ratchet: 1-50
+      bit: I
+    part_instances_confirmed: false
     notes:
-      - 為了零件
+      - 零件
+      - 備選
+      - 路上，未到貨前不得視為已持有
