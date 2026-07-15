@@ -4,13 +4,13 @@ currency: TWD
 configuration_model:
   org: "Original；Takara Tomy 原廠配置與官方設計策略。"
   opt: "Optimal；純粹依 Blade 物理結構推導的單顆理論最佳配置。"
-  dck: "Deck；固定六機賽制下，零件不重複的永久配置。"
+  dck: "Deck；核心三機的目標永久配置。"
   tmp: "Temporary；依目前已實際擁有零件可組出的暫時配置。"
 rules:
   unknown_policy: "未確認資料一律填 unknown，不自行猜測。"
   ordered_policy: "已訂購但尚未收到的商品不得假設是哪個版本。"
   random_variant_policy: "隨機包尚未確認實際款式時，只能記錄主打款，不可視為實際持有。"
-  dck_policy: "固定六機之間 Ratchet 與 Bit 不重複；尚未定案欄位保留空白。"
+  dck_policy: "核心三機以固定配裝為目標；尚未定案欄位保留空白。"
   tmp_policy: "tmp 僅使用目前已實際擁有且已確認存在的零件。"
   meta_policy: "opt 不依網路 META 擅自覆蓋；實測可修正 opt，但需保留理由。"
 summary:
@@ -72,7 +72,6 @@ items:
     purchase_reason: unknown
     notes:
       - 左旋
-      - 固定六機順位6
     org:
       ratchet: 3-70
       bit: J
@@ -138,7 +137,7 @@ items:
     notes:
       - 主力
       - 最喜歡的鳳凰
-      - 固定六機順位1
+      - 核心三機順位1
     org:
       ratchet: 5-80
       bit: H
@@ -148,9 +147,9 @@ items:
       bit: R
       strategy: "以低重心控制反作用力，Rush 最大化有效撞擊次數"
     dck:
-      ratchet: ""
-      bit: ""
-      strategy: ""
+      ratchet: 1-50
+      bit: LF
+      strategy: "核心第一機目標配裝；所需零件尚在訂購品上，到貨前不得視為已可實際組裝。"
     tmp:
       ratchet: ""
       bit: ""
@@ -170,8 +169,8 @@ items:
     confirmed_variant: unknown
     purchase_reason: unknown
     notes:
-      - 主力
-      - 固定六機順位3
+      - 已退出核心陣容
+      - 實測後不太滿意
     org:
       ratchet: 0-70
       bit: Z
@@ -236,8 +235,6 @@ items:
     confirmed_variant: unknown
     purchase_reason: unknown
     notes:
-      - 主力
-      - 固定六機順位4
       - 隨機包3款
     org:
       ratchet: "未確認；主打款5-80"
@@ -271,7 +268,7 @@ items:
     purchase_reason: unknown
     notes:
       - 主力
-      - 固定六機順位5
+      - 核心三機順位3
       - 隨機包3款
     org:
       ratchet: "未確認；主打款9-70"
@@ -284,7 +281,7 @@ items:
     dck:
       ratchet: ""
       bit: ""
-      strategy: ""
+      strategy: "核心第三機；目標配裝尚未決定。"
     tmp:
       ratchet: ""
       bit: ""
@@ -305,7 +302,7 @@ items:
     purchase_reason: unknown
     notes:
       - 主力
-      - 固定六機順位2
+      - 核心三機順位2
     org:
       ratchet: "一體化，無獨立 Ratchet"
       bit: LF
@@ -315,9 +312,9 @@ items:
       bit: LF
       strategy: "低姿態降低翻倒力矩，以高速正面撞擊啟動 Bound 機構"
     dck:
-      ratchet: ""
-      bit: ""
-      strategy: ""
+      ratchet: "一體化，無獨立 Ratchet"
+      bit: J
+      strategy: "核心第二機目標配裝；改用 J 軸。"
     tmp:
       ratchet: ""
       bit: ""

@@ -1,75 +1,55 @@
-schema_version: 2
-last_updated: 2026-07-11
+schema_version: 3
+last_updated: 2026-07-16
 configuration_model:
   org: "Original；Takara Tomy 原廠配置與官方設計策略。"
   opt: "Optimal；單顆 Blade 依物理結構推導的理論最佳配置。"
-  dck: "Deck；固定六機賽制下，零件不重複的永久配置。"
+  dck: "Deck；核心三機的目標永久配置。"
   tmp: "Temporary；目前已實際擁有零件可組出的暫時配置。"
 policy:
-  dck_definition: "使用者預計建立的六顆固定配裝。"
-  dck_unique_rule: "固定六機之間 Ratchet 與 Bit 不重複；女武神不占用一般 Ratchet 名額。"
-  dck_pending_rule: "dck 尚未定案前，ratchet / bit / strategy 維持空白。"
+  dck_definition: "使用者預計建立的三顆核心固定配裝。"
+  dck_unique_rule: "核心三機的實際配裝不可同時重複使用同一個零件實體。"
+  dck_pending_rule: "尚未定案的 ratchet / bit 保留空白，並在 role 標明待定。"
+  target_availability_rule: "可記錄未來目標配裝，但尚未到貨的零件不得視為目前可用。"
   tmp_owned_only_rule: "tmp 僅能使用目前已實際擁有且已確認的零件。"
-  random_variant_rule: "鯨魚與狐狸的主打款資訊不得視為實際取得零件。"
+  random_variant_rule: "狐狸的主打款資訊不得視為實際取得零件。"
   opt_rule: "opt 不依網路 META 擅自覆蓋；實測可修正 opt，但需保留理由。"
-fixed_six:
+core_three:
   - rank: 1
     item_id: bbx-004
     blade: 藍鳳凰
     dck:
-      ratchet: ""
-      bit: ""
+      ratchet: 1-50
+      bit: LF
     role: 第一主攻、核心主力
-    complete: false
+    configuration_decided: true
+    currently_buildable: false
   - rank: 2
     item_id: bbx-009
     blade: 女武神
     dck:
-      ratchet: ""
-      bit: ""
+      ratchet: "一體化，無獨立 Ratchet"
+      bit: J
     role: 第二主攻、Bound 爆發擊飛
-    complete: false
+    configuration_decided: true
+    currently_buildable: false
   - rank: 3
-    item_id: bbx-005
-    blade: 天蠍
-    dck:
-      ratchet: ""
-      bit: ""
-    role: 守分、穩定收尾
-    complete: false
-  - rank: 4
-    item_id: bbx-007
-    blade: 鯨魚
-    dck:
-      ratchet: ""
-      bit: ""
-    role: 重量壓制、重型攻擊
-    complete: false
-  - rank: 5
     item_id: bbx-008
     blade: 狐狸
     dck:
       ratchet: ""
       bit: ""
-    role: 連續追擊、廣範圍連打
-    complete: false
-  - rank: 6
-    item_id: bbx-002
-    blade: 隕星龍
-    dck:
-      ratchet: ""
-      bit: ""
-    role: 左旋特化、針對右旋環境
-    complete: false
+    role: 連續追擊、廣範圍連打；配裝待定
+    configuration_decided: false
+    currently_buildable: false
 tmp:
   - item_id: bbx-005
     blade: 天蠍
     ratchet: 9-60
     bit: Z
-    strategy: "已實測降低爆體風險，暫時可視為接近完成。"
+    strategy: "已實測降低爆體風險，但使用者對整體表現不太滿意。"
     source_note: "9-60 來自目前已持有零件；此 tmp 不代表紅鳳凰同時使用同一個 Ratchet。"
-    completion: "⭐⭐⭐⭐☆"
+    completion: "測試結束，不納入核心三機"
 observations:
   - item_id: bbx-005
     blade: 天蠍
-    note: "Scorpio Spear 原廠 0-70 Z 在使用者實測中容易被紅鳳凰直接爆體；更換為 9-60 Z 後爆體問題明顯改善，姿態更加穩定，仍保留 Z 軸攻守切換特性。"
+    note: "Scorpio Spear 原廠 0-70 Z 容易被紅鳳凰直接爆體；更換為 9-60 Z 後爆體問題明顯改善，但 2026-07-16 使用者確認整體實測後仍不太滿意，因此退出核心陣容。"

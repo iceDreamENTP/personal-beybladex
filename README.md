@@ -10,7 +10,7 @@
 |---|---|---|
 | `org` | Original | Takara Tomy 原廠配置與官方設計策略 |
 | `opt` | Optimal | 純粹依物理結構推導的單顆理論最佳配置 |
-| `dck` | Deck | 固定六機賽制下，零件不重複的永久配置 |
+| `dck` | Deck | 核心三機的目標永久配置 |
 | `tmp` | Temporary | 依目前已實際擁有的零件可組出的暫時配置 |
 
 ## 收藏總覽
@@ -28,29 +28,26 @@
 | 型號 | 中文名 | Blade | 狀態 | 備註 | 完成度 |
 |---|---|---|---|---|---|
 | BX-23 | 紅鳳凰 | Phoenix Wing | 擁有 | 備選 | ⭐☆☆☆☆ |
-| UX-17 | 隕星龍 | Meteor Dragoon | 擁有 | 左旋、固定六機順位6 | ⭐☆☆☆☆ |
+| UX-17 | 隕星龍 | Meteor Dragoon | 擁有 | 左旋 | ⭐☆☆☆☆ |
 | CX-14 | 騎士堡壘 | Knight Fortress GV | 擁有 | 備選 | ⭐☆☆☆☆ |
-| BX-35-05 | 藍鳳凰 | Phoenix Wing | 擁有 | 主力、最喜歡的鳳凰、固定六機順位1 | ⭐☆☆☆☆ |
-| UX-14 | 天蠍 | Scorpio Spear | 擁有 | 主力、固定六機順位3 | ⭐⭐⭐⭐☆ |
+| BX-35-05 | 藍鳳凰 | Phoenix Wing | 擁有 | 核心三機順位1、最喜歡的鳳凰 | ⭐☆☆☆☆ |
+| UX-14 | 天蠍 | Scorpio Spear | 擁有 | 實測後不太滿意，已退出核心 | ⭐⭐⭐⭐☆ |
 | BX-26 | 獨角獸 | Unicorn Sting | 路上 | 零件、備選 | ⭐☆☆☆☆ |
-| BX-36 | 鯨魚 | Whale Wave | 路上 | 主力、固定六機順位4、隨機包3款 | ⭐☆☆☆☆ |
-| CX-06 | 狐狸 | Fox Brush J | 路上 | 主力、固定六機順位5、隨機包3款 | ⭐☆☆☆☆ |
-| UX-20 | 女武神 | Glory Valkyrie | 路上 | 主力、固定六機順位2 | ⭐☆☆☆☆ |
+| BX-36 | 鯨魚 | Whale Wave | 路上 | 隨機包3款 | ⭐☆☆☆☆ |
+| CX-06 | 狐狸 | Fox Brush J | 路上 | 核心三機順位3、配裝待定、隨機包3款 | ⭐☆☆☆☆ |
+| UX-20 | 女武神 | Glory Valkyrie | 路上 | 核心三機順位2 | ⭐☆☆☆☆ |
 | CX-13 | 龍王 | Bahamut Blitz BK | 路上 | 零件、備選 | ⭐☆☆☆☆ |
 | CX-12 | 鳳凰閃焰 | Phoenix Flare Z | 擁有 | 同事日本代購 | ⭐☆☆☆☆ |
 
-## 固定六機
+## 核心三機
 
 完整規則見 [docs/main-roster.md](docs/main-roster.md)。
 
 | 順位 | Blade | dck鎖 | dck軸 | 定位 | 完成 |
 |---|---|---|---|---|---|
-| 1 | 藍鳳凰 |  |  | 第一主攻、核心主力 | ☐ |
-| 2 | 女武神 |  |  | 第二主攻、Bound 爆發擊飛 | ☐ |
-| 3 | 天蠍 |  |  | 守分、穩定收尾 | ☐ |
-| 4 | 鯨魚 |  |  | 重量壓制、重型攻擊 | ☐ |
-| 5 | 狐狸 |  |  | 連續追擊、廣範圍連打 | ☐ |
-| 6 | 隕星龍 |  |  | 左旋特化、針對右旋環境 | ☐ |
+| 1 | 藍鳳凰 | 1-50 | LF | 第一主攻、核心主力 | ☑ |
+| 2 | 女武神 | 一體化 | J | 第二主攻、Bound 爆發擊飛 | ☑ |
+| 3 | 狐狸 |  |  | 連續追擊、配裝待定 | ☐ |
 
 ## 花費統計
 
@@ -92,7 +89,7 @@ personal-beybladex/
 2. 新增到 `data/inventory.yaml` 的 `items`。
 3. 同步更新 `data/purchases.yaml`。
 4. 若已確認 `org` 的 Blade / Ratchet / Bit，更新 `data/parts.yaml`；未知資訊一律填 `unknown`。
-5. 需要納入固定六機時，再更新 `docs/main-roster.md` 與 `data/loadouts.yaml`。
+5. 需要納入核心三機時，再更新 `docs/main-roster.md` 與 `data/loadouts.yaml`。
 6. 更新 README 的收藏數量與花費統計。
 
 ## 如何新增一次實戰紀錄
@@ -100,4 +97,4 @@ personal-beybladex/
 1. 複製 `templates/battle-test-entry.yaml` 的格式。
 2. 新增到 `data/battle-tests.yaml` 的 `battle_tests`。
 3. 實戰使用的配裝必須標示 `org`、`opt`、`dck` 或 `tmp`。
-4. 若測試結果讓固定六機、`opt` 或 `tmp` 改變，同步更新 `docs/main-roster.md`、`data/inventory.yaml` 與 `data/loadouts.yaml`。
+4. 若測試結果讓核心三機、`opt` 或 `tmp` 改變，同步更新 `docs/main-roster.md`、`data/inventory.yaml` 與 `data/loadouts.yaml`。

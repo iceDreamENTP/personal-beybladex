@@ -6,7 +6,7 @@ policy:
   extra_parts_purchased: false
   ordered_policy: "路上與隨機包尚未確認的零件不得視為已持有。"
   random_variant_policy: "隨機包尚未確認實際款式時，只能記錄主打款資訊。"
-  dck_unique_policy: "固定六機 dck 的 Ratchet 與 Bit 不可重複。"
+  dck_unique_policy: "核心三機以固定 dck 配裝為目標。"
 known_loose_parts:
   - part_id: loose-ratchet-001
     part_type: ratchet
@@ -45,7 +45,6 @@ stock_part_sets:
     part_instances_confirmed: true
     notes:
       - 左旋
-      - 固定六機順位6
   - item_id: bbx-003
     product_code: CX-14
     source_name_zh: 騎士堡壘
@@ -69,7 +68,7 @@ stock_part_sets:
     notes:
       - 主力
       - 最喜歡的鳳凰
-      - 固定六機順位1
+      - 核心三機順位1
   - item_id: bbx-005
     product_code: UX-14
     source_name_zh: 天蠍
@@ -80,8 +79,8 @@ stock_part_sets:
       bit: Z
     part_instances_confirmed: true
     notes:
-      - 主力
-      - 固定六機順位3
+      - 已退出核心陣容
+      - 實測後不太滿意
   - item_id: bbx-006
     product_code: BX-26
     source_name_zh: 獨角獸
@@ -108,8 +107,6 @@ stock_part_sets:
       bit: "未確認；主打款E"
     part_instances_confirmed: false
     notes:
-      - 主力
-      - 固定六機順位4
       - 隨機包3款
       - 主打款資訊不得視為實際取得零件
   - item_id: bbx-008
@@ -126,7 +123,7 @@ stock_part_sets:
     part_instances_confirmed: false
     notes:
       - 主力
-      - 固定六機順位5
+      - 核心三機順位3
       - 隨機包3款
       - 主打款資訊不得視為實際取得零件
   - item_id: bbx-009
@@ -140,7 +137,7 @@ stock_part_sets:
     part_instances_confirmed: false
     notes:
       - 主力
-      - 固定六機順位2
+      - 核心三機順位2
       - 路上，未到貨前不得視為已持有
   - item_id: bbx-010
     product_code: CX-13
