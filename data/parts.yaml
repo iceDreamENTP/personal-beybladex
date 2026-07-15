@@ -1,5 +1,5 @@
 schema_version: 2
-last_updated: 2026-07-11
+last_updated: 2026-07-16
 currency: TWD
 policy:
   configuration_model: "配裝資料統一使用 org / opt / dck / tmp。"
@@ -141,3 +141,14 @@ stock_part_sets:
       - 零件
       - 備選
       - 路上，未到貨前不得視為已持有
+  - item_id: bbx-011
+    product_code: CX-12
+    source_name_zh: 鳳凰閃焰
+    blade: Phoenix Flare Z
+    status: owned
+    org:
+      ratchet: 9-80
+      bit: WW
+    part_instances_confirmed: true
+    notes:
+      - 同事日本代購

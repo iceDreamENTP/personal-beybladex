@@ -1,5 +1,5 @@
 schema_version: 2
-last_updated: 2026-07-11
+last_updated: 2026-07-16
 currency: TWD
 configuration_model:
   org: "Original；Takara Tomy 原廠配置與官方設計策略。"
@@ -15,14 +15,14 @@ rules:
   meta_policy: "opt 不依網路 META 擅自覆蓋；實測可修正 opt，但需保留理由。"
 summary:
   counts:
-    owned: 5
+    owned: 6
     ordered: 5
     wishlist: 0
-    total: 10
+    total: 11
   spending_twd:
-    owned: 10600
+    owned: 11400
     ordered: 6200
-    total: 16800
+    total: 17600
 items:
   - item_id: bbx-001
     product_code: BX-23
@@ -346,6 +346,38 @@ items:
       ratchet: 1-50
       bit: I
       strategy: "原廠已符合低重心與單點爆發理念"
+    dck:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    tmp:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    completion: "⭐☆☆☆☆"
+  - item_id: bbx-011
+    product_code: CX-12
+    name_zh: 鳳凰閃焰
+    blade: Phoenix Flare Z
+    status: owned
+    status_zh: 擁有
+    purchase_order: 6
+    ordered_order: unknown
+    purchase_price_twd: 800
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    notes:
+      - 同事日本代購
+    org:
+      ratchet: 9-80
+      bit: WW
+      strategy: "重厚連打刃配合抑制傾斜的軸心，在場地中央以連打削弱對手並伺機反擊。"
+    opt:
+      ratchet: ""
+      bit: ""
+      strategy: ""
     dck:
       ratchet: ""
       bit: ""
