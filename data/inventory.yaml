@@ -170,7 +170,7 @@ items:
     purchase_reason: unknown
     notes:
       - 已退出核心陣容
-      - 實測後不太滿意
+      - 實測結論：性能過於平衡，攻擊性不足，持久面又不敵神杖（Wizard Rod）之流，缺乏鮮明特色與定位
     org:
       ratchet: 0-70
       bit: Z

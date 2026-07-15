@@ -80,7 +80,7 @@ stock_part_sets:
     part_instances_confirmed: true
     notes:
       - 已退出核心陣容
-      - 實測後不太滿意
+      - 實測結論：過於平衡，攻擊性不足，持久又不敵神杖類型，缺乏特色
   - item_id: bbx-006
     product_code: BX-26
     source_name_zh: 獨角獸
