@@ -6,6 +6,8 @@
 2. `data/parts.yaml`
 3. `data/loadouts.yaml`
 4. `docs/main-roster.md`
+5. `data/research-plan.yaml`
+6. `data/battle-tests.yaml`
 
 ## 基本規則
 
@@ -26,6 +28,11 @@
 - `dck` 尚未定案前，`dck鎖`、`dck軸`、`dck策略` 保持空白。
 - `tmp` 僅能使用目前已實際擁有且已確認存在的零件。
 - 實測結果可以修正 `opt`，但需保留修改理由與實測紀錄。
+- 研究計畫只包含藍鳳凰、女武神與狐狸三顆 Main Blade；其他收藏可以有實測案例，但不可加入 Main Blade 研究範圍。
+- 研究候選與理想配置不等於已持有零件，也不會自動覆蓋 `inventory`、`opt` 或 `dck`。
+- 新增案例本身不讓研究計畫升版；只有角色目標、候選配置、假說、規則、判定門檻、候選排序、信心或階段結論改變時才新增完整版本。
+- 使用者可憑印象口述實測；不得把「常常、明顯、感覺」換算成未提供的場數或勝率。
+- 實測案例以追加為原則；補充或更正使用 `amends_case_id`，不得無痕改寫原始記憶。
 - 如果零件名稱、版本、購入日期、店家或實戰結果未確認，維持 `unknown`。
 
 ## 公開 repo 安全規則
@@ -38,7 +45,8 @@
 ## 更新資料時
 
 - 先改 `data/`，再同步改 `docs/` 與 README 統計。
-- 若新增實戰紀錄，優先使用 `templates/battle-test-entry.yaml`。
+- 若新增實戰案例，優先使用 `templates/battle-test-entry.yaml`，加入 `data/battle-tests.yaml` 的 `test_cases`，並同步更新 `docs/test-cases.md`。
+- 若實測改變 Main Blade 研究方向，新增 `data/research-plan.yaml` 的完整版本，並同步更新 `docs/research-plan.md`；不要覆蓋舊版。
 - 若新增陀螺，優先使用 `templates/beyblade-entry.yaml`。
 - 若新增配裝，優先使用 `templates/loadout-entry.yaml`。
 - 若有不確定資訊，保留 `unknown`，不要用推測補齊。

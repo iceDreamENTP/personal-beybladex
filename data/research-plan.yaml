@@ -1,0 +1,251 @@
+schema_version: 1
+last_updated: 2026-07-16
+scope: main_blades_only
+current_version: 1
+policy:
+  scope_policy: "研究計畫只包含使用者的三顆 Main Blade：藍鳳凰、女武神、狐狸。"
+  source_of_truth_policy: "本檔保存研究計畫完整版本；docs/research-plan.md 為人讀摘要。"
+  inventory_boundary_policy: "研究候選與理想配置不等於已持有零件，也不會自動覆蓋 inventory、opt 或 dck。"
+  unknown_policy: "未確認日期、場數、零件、對手與結果一律填 unknown，不從印象推算數字。"
+  version_policy: "角色目標、候選配置、假說、規則、判定門檻、候選排序、信心或階段結論改變時新增完整版本，不覆蓋舊版。"
+  case_policy: "新增實測案例本身不升版；案例被研究計畫吸收並改變研究方向、候選排序、信心或階段結論時才建立新版本，並列出依據案例。"
+  evidence_policy: "官方規則與產品資訊優先；賽事 META 只作環境背景；社群案例視為暫定證據；使用者自己的實測是個人配裝決策的主要依據。"
+versions:
+  - version: 1
+    status: current
+    created_on: 2026-07-16
+    supersedes: unknown
+    change_reason: initial_research_plan
+    based_on_case_ids: []
+    ruleset:
+      name: "Takara Tomy Regulation 12th Edition"
+      effective_on: 2026-03-13
+      first_to_points: 4
+      scoring:
+        spin: 1
+        over: 2
+        burst: 2
+        xtreme: 3
+      own_finish_note: "官方規則沒有 Own Finish 降分條款；自行進入 Over 或 Xtreme 區仍可能讓對手取得完整 2 或 3 分。"
+      source: "https://beyblade.takaratomy.co.jp/beyblade-x/_image/regulation.pdf"
+    expected_value_model:
+      net_formula: "EV = [p_spin + 2*(p_over + p_burst) + 3*p_xtreme] - [q_spin + 2*(q_over + q_burst) + 3*q_xtreme]"
+      blue_phoenix_tradeoff_gate: "若狂暴化主要增加 2 分 Burst/Over，同時增加 3 分自殺 Xtreme，新增 Burst/Over 機率需大於新增自殺 Xtreme 機率的 1.5 倍，單回合淨期望分差才上升。"
+      interpretation: "最大化單回合期望分差不必然等於最大化先取 4 分的整場勝率；高分短局較利於弱勢方爆冷，穩定長局較利於原本占優的一方。"
+    meta_snapshot:
+      period: "2026-06-28/2026-07-11"
+      event_count: 29
+      participant_count: 748
+      caveat: "WBO 頒獎配置不是逐回合勝率，且各賽事規則可能與 Takara Tomy 官方 4 分制不同。"
+      benchmark_opponents:
+        - blade: Shark Scale
+          configuration: "1-70 LR"
+          role: current_attack_reference
+        - blade: Wizard Rod
+          configuration: "1-60 H"
+          role: current_stamina_reference
+        - blade: Aero Pegasus
+          configuration: "1-60 R"
+          role: heavy_attack_reference
+        - blade: "Cobalt Dragoon / Meteor Dragoon"
+          configuration: "9-60 E / current common variants"
+          role: left_spin_reference
+        - blade: Silver Wolf
+          configuration: "9-60 FB"
+          role: defense_stamina_reference
+      source: "https://note.com/kamen_a/n/n8c00dfd22387"
+    common_protocol:
+      casual_input_policy: "使用者可憑印象口述；AI 應保留定性措辭並將日期、場數與勝率等未知資料記為 unknown。"
+      structured_target: "條件允許時，每個候選配置對每類假想敵測試 40 至 50 回合。"
+      controls:
+        - "交換發射順序與左右站位。"
+        - "比較配置時盡量使用相同場地、發射器與發射者。"
+        - "記錄零件磨耗或個體差異，不把不同模具直接當成同一樣本。"
+      metrics:
+        - spin_win
+        - over_win
+        - burst_win
+        - xtreme_win
+        - spin_loss
+        - over_loss
+        - burst_loss
+        - xtreme_loss
+        - self_finish
+        - no_effective_contact
+        - first_effective_contact_timing
+        - contacts_before_burst
+        - qualitative_control
+    main_blades:
+      - item_id: bbx-004
+        name_zh: 藍鳳凰
+        blade: Phoenix Wing
+        target_role: "極限狂暴的高變異破陣手；優先追求擊飛與爆體，接受以自殺率換取爆冷能力。"
+        objectives:
+          - "對當前主流防禦、持久與攻擊型都保留 2 至 3 分終結機會。"
+          - "最大化首輪有效碰撞的速度、下位攻擊與碰撞衝量。"
+        accepted_tradeoffs:
+          - high_self_finish_risk
+          - very_low_stamina
+          - high_variance
+        current_dck_baseline:
+          ratchet: 1-50
+          bit: LF
+          source: data/loadouts.yaml
+          note: "既有 dck 基準，本研究版本不自動覆蓋。"
+        arrival_pool_configuration:
+          ratchet: 1-50
+          bit: I
+          availability: ordered_nonrandom
+          part_source: bbx-010
+          hypothesis: "I 的 27.5 mm 低高度、16 齒與高機動可把 Phoenix Wing 推向更極端的 Burst/KO 路線。"
+        unrestricted_ideal_configuration:
+          ratchet: 1-50
+          bit: I
+          availability: ordered_nonrandom
+          confidence: medium
+        comparison_candidates:
+          - configuration: "1-50 LF"
+            purpose: "較高有效接觸率與實戰容錯的比較基準。"
+          - configuration: "3-60 R / LR"
+            purpose: "近期 Phoenix Wing 頒獎配置常見的 CP 對照組，不代表角色首選。"
+        test_questions:
+          - "I 相對 LF 增加的主動 Burst/Over/Xtreme 是否足以抵銷自殺 Xtreme？"
+          - "過低高度是否造成刮地、錯過接觸點或首擊後快速失速？"
+          - "面對 Shark Scale、Wizard Rod 與 Silver Wolf 時，哪種發射角能提高首擊命中率？"
+        decision_criteria:
+          - "優先比較官方 4 分制下的淨期望分差。"
+          - "若 I 的期望分差不高於 LF，但使用者仍偏好極端人格，可保留 I 為角色配置、LF 為比賽配置。"
+        next_tests:
+          - "1-50 I vs 1-50 LF，先對 Shark Scale 與 Wizard Rod 類型測試。"
+          - "實秤藍鳳凰與各 Ratchet/Bit 組合，記錄個體重量。"
+      - item_id: bbx-009
+        name_zh: 女武神
+        blade: Glory Valkyrie
+        target_role: "穩偏輸出的最高 CP 機；能擊飛或打爆主流防禦/持久型，也能轉停勝過主流攻擊型。"
+        objectives:
+          - "對攻擊型以存活與 Spin Finish 建立一分下限。"
+          - "對持久、防禦型保留 Over/Burst 的二分終結能力。"
+          - "降低 Bound 機構、偏重心與 X Dash 疊加造成的自耗。"
+        accepted_tradeoffs:
+          - moderate_attack_variance
+          - launch_angle_skill_requirement
+        current_dck_baseline:
+          ratchet: "一體化，無獨立 Ratchet"
+          bit: J
+          source: data/loadouts.yaml
+          note: "既有 dck 基準；J 保留為到貨後的第一個比較組。"
+        arrival_pool_configuration:
+          ratchet: "一體化，無獨立 Ratchet"
+          bit: GP
+          availability: ordered_nonrandom
+          part_source: bbx-006
+          hypothesis: "GP 平射可守中心、斜射可進攻，理論上比 J 更符合穩偏輸出與轉停需求。"
+        unrestricted_ideal_configuration:
+          ratchet: "一體化，無獨立 Ratchet"
+          bit: P
+          availability: unrestricted_not_owned
+          confidence: low_to_medium
+        comparison_candidates:
+          - configuration: "一體化 + J"
+            purpose: "使用者原始目標與到貨後基準。"
+          - configuration: "一體化 + GP"
+            purpose: "現有零件池中最接近 Point 的穩定平衡方案。"
+          - configuration: "一體化 + K"
+            purpose: "較主動、具現行 META 成績的平衡型對照。"
+          - configuration: "一體化 + LR"
+            purpose: "攻擊輸出與續航折衷對照。"
+        test_questions:
+          - "J 是否因偏重心與 16 齒造成兩次 Dash 後進入死亡螺旋？"
+          - "GP/P 能否在守中心時轉停主流攻擊型，並在角度發射時擊飛 Wizard Rod 類型？"
+          - "Bound 回彈在不同 Bit 上造成多少自耗與反擊收益？"
+        decision_criteria:
+          - "以跨假想敵的整體淨期望分差與最低 matchup 表現為主。"
+          - "理想 Bit 必須同時保留對攻擊型的 Spin 路線與對持久/防禦型的二分路線。"
+        next_tests:
+          - "到貨後先比較 J 與 GP。"
+          - "取得 P 或 K 後，再與 GP 進行同條件比較。"
+      - item_id: bbx-008
+        name_zh: 狐狸
+        blade: Fox Brush J
+        target_role: "以連續接觸累積 Burst；對攻擊型避開前段鋒芒並轉停，對持久/防禦型主動製造反覆碰撞。"
+        objectives:
+          - "最大化對持久與防禦型的 Burst Finish 機率。"
+          - "保留對純攻擊型的後段 Spin Finish 能力。"
+          - "控制 CX 高度與 Brush 不平衡造成的自身 Burst、失衡與失速。"
+        accepted_tradeoffs:
+          - moderate_self_finish_risk
+          - lower_pure_stamina_than_specialists
+          - matchup_dependent_launch_style
+        current_dck_baseline:
+          ratchet: unknown
+          bit: unknown
+          source: data/loadouts.yaml
+          note: "狐狸 dck 尚未定案，隨機款到貨前不確認實際零件。"
+        arrival_pool_configuration:
+          main_blade: Brush
+          assist_blade: Jaggy
+          ratchet: 9-60
+          bit: GP
+          availability: conditional_on_arrival_confirmation
+          hypothesis: "9-60 抑制自身 Burst；GP 以平射/斜射切換避戰與主動連打。"
+        unrestricted_ideal_configuration:
+          main_blade: Brush
+          assist_blade: Jaggy
+          ratchet: 1-60
+          bit: U
+          availability: unrestricted_not_owned
+          confidence: medium
+        comparison_candidates:
+          - configuration: "Brush Jaggy 9-60 U"
+            purpose: "較低變異、較高自身安全性的 Unite 對照。"
+          - configuration: "Brush Jaggy 9-60 H"
+            purpose: "防守反擊與持久上限對照；預期主動 Burst 壓力較低。"
+          - configuration: "Brush Heavy 1-60 U"
+            purpose: "測試 Heavy 增重與降重心是否勝過 Jaggy 的連打接觸。"
+          - configuration: "Delta Peak Heavy 9-60 K"
+            purpose: "若未來優先總勝率而非 Burst 人格，作為目前 CX META 對照。"
+        test_questions:
+          - "1-60 U 相對 9-60 U 增加的 Burst 壓力是否足以抵銷自身 Burst/KO 與持久損失？"
+          - "GP 能否穩定以發射角切換對攻擊型避戰、對持久型主動接觸？"
+          - "Jaggy 與 Heavy 哪一個在實際樣本中帶來更高 Burst Finish，而不是只增加重量或碰撞感？"
+        decision_criteria:
+          - "對攻擊型優先比較 Spin Finish 與自身失分；對持久/防禦型優先比較 Burst Finish。"
+          - "不以總勝率掩蓋 matchup；至少分成 attack、stamina、defense 三類判定。"
+        next_tests:
+          - "到貨後先建立 9-60 GP 基準。"
+          - "若抽到 U，優先比較 9-60 U 與 1-60 U。"
+          - "有 Heavy 後再做 Jaggy/Heavy 單變因比較。"
+    sources:
+      - title: "Takara Tomy Regulation 12th Edition"
+        url: "https://beyblade.takaratomy.co.jp/beyblade-x/_image/regulation.pdf"
+        source_type: official_rules
+      - title: "WBO tournament podium aggregation, 2026-06-28 to 2026-07-11"
+        url: "https://note.com/kamen_a/n/n8c00dfd22387"
+        source_type: community_meta_aggregation
+      - title: "Phoenix Wing recent WBO placement configurations"
+        url: "https://www.beymetatool.com/blades/PhoenixWing"
+        source_type: community_meta_database
+      - title: "Ignition Bit analysis"
+        url: "https://beyblade.wiki/ignition-bit/"
+        source_type: community_part_analysis
+      - title: "Glory Valkyrie UX-20 official product page"
+        url: "https://beyblade.takaratomy.co.jp/beyblade-x/lineup/ux20.html"
+        source_type: official_product
+      - title: "Glory Valkyrie early tournament-oriented review"
+        url: "https://note.com/sabo_ip01/n/ndf66bd69e718"
+        source_type: community_early_test
+      - title: "Glory Valkyrie early Bit comparison"
+        url: "https://www.reddit.com/r/BeybladeX/comments/1uthx4g/glory_valkyrie_is_so_ridiculously_broken_a_quick/"
+        source_type: community_early_test
+      - title: "Brush Main Blade analysis"
+        url: "https://beyblade.wiki/brush-main-blade/"
+        source_type: community_part_analysis
+      - title: "Gear Point Bit analysis"
+        url: "https://beyblade.wiki/gear-point-bit/"
+        source_type: community_part_analysis
+      - title: "Unite Bit analysis"
+        url: "https://www.beybxdb.com/parts-system-guide/parts/bit/unite"
+        source_type: community_part_analysis
+      - title: "Fox Brush Jaggy 1-60 Unite local tournament case"
+        url: "https://www.reddit.com/r/BeybladeX/comments/1sp0ghq/won_3rd_in_a_local_tournament_with_this_deck/"
+        source_type: community_tournament_case

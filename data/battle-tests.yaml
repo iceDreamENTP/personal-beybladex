@@ -1,6 +1,74 @@
-schema_version: 1
-last_updated: 2026-07-11
+schema_version: 2
+last_updated: 2026-07-16
 policy:
   unknown_policy: "未記錄或未確認資訊填 unknown。"
-  loadout_policy: "每筆實戰紀錄應標示使用 org / opt / dck / tmp 中哪一層配置。"
-battle_tests: []
+  source_policy: "案例可由使用者憑印象口述；保留口述摘要，不把定性描述換算成虛構場數或勝率。"
+  configuration_policy: "每個已知配置應標示 org / opt / dck / tmp 中哪一層；不適用或未確認時填 unknown。"
+  append_policy: "案例以追加為原則；後續補充或更正使用 amends_case_id 連結，不無痕覆蓋原始記憶。"
+  research_policy: "案例可連結研究計畫版本；新增案例本身不代表自動升版，但資料改變候選排序、信心、階段結論或研究方向時應建立新版。"
+test_cases:
+  - case_id: case-0001
+    status: recorded
+    reported_on: 2026-07-16
+    played_on: unknown
+    source_type: user_recollection
+    detail_level: qualitative
+    sample_size: unknown
+    amends_case_id: unknown
+    subject:
+      item_id: bbx-005
+      name_zh: 天蠍
+      blade: Scorpio Spear
+    configurations:
+      - label: stock_baseline
+        config_layer: org
+        ratchet: 0-70
+        bit: Z
+      - label: revised_test
+        config_layer: tmp
+        ratchet: 9-60
+        bit: Z
+    opponents:
+      - blade: Phoenix Wing
+        ratchet: unknown
+        bit: unknown
+        role: burst_pressure_reference
+      - blade: Wizard Rod
+        ratchet: unknown
+        bit: unknown
+        role: stamina_reference
+    context:
+      ruleset: unknown
+      stadium: unknown
+      location: unknown
+      launch_order: unknown
+    outcome_counts:
+      total: unknown
+      spin_win: unknown
+      over_win: unknown
+      burst_win: unknown
+      xtreme_win: unknown
+      spin_loss: unknown
+      over_loss: unknown
+      burst_loss: unknown
+      xtreme_loss: unknown
+      self_finish: unknown
+    user_report_summary: "原廠 0-70 Z 容易被紅鳳凰直接爆體；換成 9-60 Z 後爆體問題明顯改善、姿態也更穩。但整體太平衡，攻擊性不足，持久又輸神杖之流，沒有特色。"
+    observations:
+      - dimension: burst_resistance
+        finding: "9-60 Z 相對 0-70 Z 明顯改善遭爆體問題。"
+      - dimension: stability
+        finding: "9-60 Z 的姿態較穩定。"
+      - dimension: attack
+        finding: "攻擊性不足，沒有形成明確終結能力。"
+      - dimension: stamina
+        finding: "持久面不敵 Wizard Rod 類型。"
+      - dimension: role_identity
+        finding: "整體過於平衡，缺乏鮮明特色與核心陣容定位。"
+    conclusion: "Scorpio Spear 不再列入核心三機；既有測試配置與理由保留。"
+    linked_research_plan_version: unknown
+    research_impact: none
+    decision: exited_core_roster
+    notes:
+      - "本案例整理自使用者既有口述與 repo 既有結論。"
+      - "日期、場數、場地及對手其餘零件未確認，維持 unknown。"

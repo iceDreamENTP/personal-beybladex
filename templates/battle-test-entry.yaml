@@ -1,14 +1,45 @@
-- test_id: unknown
-  test_date: unknown
-  location: unknown
-  ruleset: unknown
-  stadium: unknown
-  opponent: unknown
-  item_id: unknown
-  config_layer: unknown
-  ratchet: unknown
-  bit: unknown
-  result: unknown
-  observed_strengths: []
-  observed_weaknesses: []
+- case_id: unknown
+  status: recorded
+  reported_on: unknown
+  played_on: unknown
+  source_type: user_recollection
+  detail_level: qualitative
+  sample_size: unknown
+  amends_case_id: unknown
+  subject:
+    item_id: unknown
+    name_zh: unknown
+    blade: unknown
+  configurations:
+    - label: unknown
+      config_layer: unknown
+      ratchet: unknown
+      bit: unknown
+  opponents:
+    - blade: unknown
+      ratchet: unknown
+      bit: unknown
+      role: unknown
+  context:
+    ruleset: unknown
+    stadium: unknown
+    location: unknown
+    launch_order: unknown
+  outcome_counts:
+    total: unknown
+    spin_win: unknown
+    over_win: unknown
+    burst_win: unknown
+    xtreme_win: unknown
+    spin_loss: unknown
+    over_loss: unknown
+    burst_loss: unknown
+    xtreme_loss: unknown
+    self_finish: unknown
+  user_report_summary: ""
+  observations: []
+  conclusion: ""
+  linked_research_plan_version: unknown
+  research_impact: none
+  decision: unknown
   notes: []

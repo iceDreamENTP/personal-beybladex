@@ -49,6 +49,13 @@
 | 2 | 女武神 | 一體化 | J | 第二主攻、Bound 爆發擊飛 | ☑ |
 | 3 | 狐狸 |  |  | 連續追擊、配裝待定 | ☐ |
 
+## 研究與實測
+
+- [Main Blade 研究計畫](docs/research-plan.md)：只針對藍鳳凰、女武神與狐狸，保存版本化目標、假說、候選配置、計分模型與測試門檻。
+- [實測案例](docs/test-cases.md)：收錄使用者實際遊玩後的口述或統計結果；不確定日期、場數與零件維持 `unknown`。
+- `data/research-plan.yaml` 與 `data/battle-tests.yaml` 是機器可讀的事實來源，Markdown 文件是人讀摘要。
+- 新增案例不會自動讓研究計畫升版；只有目標、候選配置、假說、規則、判定門檻、候選排序、信心或階段結論改變時才建立下一版。
+
 ## 花費統計
 
 | 類別 | 金額 |
@@ -70,10 +77,13 @@ personal-beybladex/
 │   ├── parts.yaml
 │   ├── loadouts.yaml
 │   ├── purchases.yaml
+│   ├── research-plan.yaml
 │   └── battle-tests.yaml
 ├── docs/
 │   ├── collection.md
 │   ├── main-roster.md
+│   ├── research-plan.md
+│   ├── test-cases.md
 │   ├── wishlist.md
 │   ├── terminology.md
 │   └── update-guide.md
@@ -94,7 +104,16 @@ personal-beybladex/
 
 ## 如何新增一次實戰紀錄
 
-1. 複製 `templates/battle-test-entry.yaml` 的格式。
-2. 新增到 `data/battle-tests.yaml` 的 `battle_tests`。
-3. 實戰使用的配裝必須標示 `org`、`opt`、`dck` 或 `tmp`。
-4. 若測試結果讓核心三機、`opt` 或 `tmp` 改變，同步更新 `docs/main-roster.md`、`data/inventory.yaml` 與 `data/loadouts.yaml`。
+1. 使用者可以直接憑印象口述，不必提供完整逐場統計。
+2. 依 `templates/battle-test-entry.yaml` 格式，新增到 `data/battle-tests.yaml` 的 `test_cases`。
+3. 已知配裝標示 `org`、`opt`、`dck` 或 `tmp`；未知日期、場數、場地與對手零件填 `unknown`。
+4. 同步更新 `docs/test-cases.md` 的索引與摘要。
+5. 若案例改變 Main Blade 研究方向，再新增 `data/research-plan.yaml` 的完整版本並同步 `docs/research-plan.md`；不要直接覆蓋舊版。
+
+## 如何更新研究計畫
+
+1. 研究計畫只包含藍鳳凰、女武神與狐狸。
+2. 單純新增案例、修字或補來源不升版。
+3. 角色目標、候選配置、假說、規則、判定門檻、候選排序、信心或階段結論改變時，複製目前完整版本建立下一版。
+4. 新版記錄 `supersedes`、變更理由與依據案例編號；舊版改為 `superseded`，不刪除。
+5. 研究候選不等於已持有零件，也不自動覆蓋 `inventory`、`opt` 或 `dck`。
