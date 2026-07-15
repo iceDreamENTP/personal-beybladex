@@ -7,7 +7,16 @@ policy:
   ordered_policy: "路上與隨機包尚未確認的零件不得視為已持有。"
   random_variant_policy: "隨機包尚未確認實際款式時，只能記錄主打款資訊。"
   dck_unique_policy: "固定六機 dck 的 Ratchet 與 Bit 不可重複。"
-known_loose_parts: []
+known_loose_parts:
+  - part_id: loose-ratchet-001
+    part_type: ratchet
+    name: 4-50
+    status: owned
+    quantity: 1
+    acquisition_method: gift
+    source: 同事贈送
+    received_date: unknown
+    notes: []
 stock_part_sets:
   - item_id: bbx-001
     product_code: BX-23
@@ -17,9 +26,14 @@ stock_part_sets:
     org:
       ratchet: 9-60
       bit: GF
+    part_availability:
+      blade: owned
+      ratchet: owned
+      bit: lost
     part_instances_confirmed: true
     notes:
       - 備選
+      - GF 軸於 2026-07 遊玩時噴飛遺失，目前不可用
   - item_id: bbx-002
     product_code: UX-17
     source_name_zh: 隕星龍

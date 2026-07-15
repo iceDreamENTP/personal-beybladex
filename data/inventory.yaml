@@ -39,6 +39,7 @@ items:
     purchase_reason: unknown
     notes:
       - 備選
+      - GF 軸於 2026-07 遊玩時噴飛遺失，原廠配置紀錄保留，但零件已不可用
     org:
       ratchet: 9-60
       bit: GF
