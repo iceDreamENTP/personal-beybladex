@@ -1,5 +1,5 @@
 schema_version: 2
-last_updated: 2026-07-16
+last_updated: 2026-07-18
 currency: TWD
 configuration_model:
   org: "Original；Takara Tomy 原廠配置與官方設計策略。"
@@ -15,8 +15,8 @@ rules:
   meta_policy: "opt 不依網路 META 擅自覆蓋；實測可修正 opt，但需保留理由。"
 summary:
   counts:
-    owned: 6
-    ordered: 5
+    owned: 7
+    ordered: 4
     wishlist: 0
     total: 11
   spending_twd:
@@ -254,25 +254,25 @@ items:
       strategy: ""
     completion: "⭐☆☆☆☆"
   - item_id: bbx-008
-    product_code: CX-06
+    product_code: CX-06-01
     name_zh: 狐狸
     blade: Fox Brush J
-    status: ordered
-    status_zh: 路上
-    purchase_order: unknown
-    ordered_order: 3
+    status: owned
+    status_zh: 已持有
+    purchase_order: 7
+    ordered_order: unknown
     purchase_price_twd: 1100
     random_variant: true
     possible_variants: 3
-    confirmed_variant: unknown
+    confirmed_variant: CX-06-01
     purchase_reason: unknown
     notes:
       - 主力
       - 核心三機順位3
-      - 隨機包3款
+      - 隨機包3款；到貨確認為白狐 CX-06-01
     org:
-      ratchet: "未確認；主打款9-70"
-      bit: "未確認；主打款GR"
+      ratchet: 9-70
+      bit: GR
       strategy: "主打款為廣範圍連打，依靠連續 X Dash 疊加攻勢"
     opt:
       ratchet: 9-60

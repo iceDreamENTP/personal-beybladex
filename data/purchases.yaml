@@ -1,9 +1,9 @@
 schema_version: 1
-last_updated: 2026-07-16
+last_updated: 2026-07-18
 currency: TWD
 summary:
-  owned_spending_twd: 11400
-  ordered_spending_twd: 6200
+  owned_spending_twd: 12500
+  ordered_spending_twd: 5100
   total_spending_twd: 17600
 records:
   - item_id: bbx-001
@@ -85,14 +85,14 @@ records:
     purchase_reason: unknown
   - item_id: bbx-008
     name_zh: 狐狸
-    product_code: CX-06
-    status: ordered
+    product_code: CX-06-01
+    status: owned
     purchase_price_twd: 1100
-    purchase_order: unknown
-    ordered_order: 3
+    purchase_order: 7
+    ordered_order: unknown
     purchase_date: unknown
     seller: unknown
-    received_date: unknown
+    received_date: 2026-07-18
     purchase_reason: unknown
   - item_id: bbx-009
     name_zh: 女武神

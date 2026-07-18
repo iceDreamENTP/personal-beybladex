@@ -1,5 +1,5 @@
 schema_version: 2
-last_updated: 2026-07-16
+last_updated: 2026-07-18
 currency: TWD
 policy:
   configuration_model: "配裝資料統一使用 org / opt / dck / tmp。"
@@ -110,22 +110,21 @@ stock_part_sets:
       - 隨機包3款
       - 主打款資訊不得視為實際取得零件
   - item_id: bbx-008
-    product_code: CX-06
+    product_code: CX-06-01
     source_name_zh: 狐狸
     blade: Fox Brush J
-    status: ordered
+    status: owned
     random_variant: true
     possible_variants: 3
-    confirmed_variant: unknown
+    confirmed_variant: CX-06-01
     org:
-      ratchet: "未確認；主打款9-70"
-      bit: "未確認；主打款GR"
-    part_instances_confirmed: false
+      ratchet: 9-70
+      bit: GR
+    part_instances_confirmed: true
     notes:
       - 主力
       - 核心三機順位3
-      - 隨機包3款
-      - 主打款資訊不得視為實際取得零件
+      - 隨機包3款；到貨確認為白狐 CX-06-01
   - item_id: bbx-009
     product_code: UX-20
     source_name_zh: 女武神

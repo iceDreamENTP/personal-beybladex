@@ -1,5 +1,5 @@
 schema_version: 3
-last_updated: 2026-07-16
+last_updated: 2026-07-18
 configuration_model:
   org: "Original；Takara Tomy 原廠配置與官方設計策略。"
   opt: "Optimal；單顆 Blade 依物理結構推導的理論最佳配置。"
@@ -11,7 +11,7 @@ policy:
   dck_pending_rule: "尚未定案的 ratchet / bit 保留空白，並在 role 標明待定。"
   target_availability_rule: "可記錄未來目標配裝，但尚未到貨的零件不得視為目前可用。"
   tmp_owned_only_rule: "tmp 僅能使用目前已實際擁有且已確認的零件。"
-  random_variant_rule: "狐狸的主打款資訊不得視為實際取得零件。"
+  random_variant_rule: "隨機款未確認前，主打款資訊不得視為實際取得零件；狐狸已確認為 CX-06-01。"
   opt_rule: "opt 不依網路 META 擅自覆蓋；實測可修正 opt，但需保留理由。"
 core_three:
   - rank: 1
