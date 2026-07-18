@@ -42,13 +42,20 @@ core_three:
     configuration_decided: false
     currently_buildable: false
 tmp:
-  - item_id: bbx-005
-    blade: 天蠍
+  - item_id: bbx-004
+    blade: 藍鳳凰
+    ratchet: 4-50
+    bit: J
+    strategy: "目前零件池的極限主攻配置；用最低可用高度製造下位攻擊，J 兼顧衝刺與後段續轉。"
+    source_note: "4-50 為已持有散件；J 來自已持有的隕星龍。此配置與白狐 9-60GR 可同時組裝。"
+    completion: "目前可組，完整配對待實測"
+  - item_id: bbx-008
+    blade: 白狐
     ratchet: 9-60
-    bit: Z
-    strategy: "已實測降低爆體風險，但性能過於平衡，攻擊性不足，持久面又不敵神杖類型，缺乏鮮明特色。"
-    source_note: "9-60 來自目前已持有零件；此 tmp 不代表紅鳳凰同時使用同一個 Ratchet。"
-    completion: "測試結束，不納入核心三機"
+    bit: GR
+    strategy: "目前零件池的極限連打配置；降低 CX 高度與 Ratchet 暴露，保留 GR 的連續 X Dash 與追擊能力。"
+    source_note: "9-60 來自已持有的紅鳳凰；GR 為白狐原裝零件。此配置與藍鳳凰 4-50J 可同時組裝。"
+    completion: "目前可組，完整配對待實測"
 observations:
   - item_id: bbx-005
     blade: 天蠍

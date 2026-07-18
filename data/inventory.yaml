@@ -20,8 +20,8 @@ summary:
     wishlist: 0
     total: 11
   spending_twd:
-    owned: 11400
-    ordered: 6200
+    owned: 12500
+    ordered: 5100
     total: 17600
 items:
   - item_id: bbx-001
@@ -151,9 +151,9 @@ items:
       bit: LF
       strategy: "核心第一機目標配裝；所需零件尚在訂購品上，到貨前不得視為已可實際組裝。"
     tmp:
-      ratchet: ""
-      bit: ""
-      strategy: ""
+      ratchet: 4-50
+      bit: J
+      strategy: "目前零件池的極限主攻配置；以唯一 50 高度 Ratchet 壓低攻擊點，搭配 J 保留高速衝刺與後段續轉。完整配對尚待實測。"
     completion: "⭐☆☆☆☆"
   - item_id: bbx-005
     product_code: UX-14
@@ -184,9 +184,9 @@ items:
       bit: ""
       strategy: ""
     tmp:
-      ratchet: 9-60
-      bit: Z
-      strategy: "已實測降低爆體風險，暫時可視為接近完成"
+      ratchet: ""
+      bit: ""
+      strategy: ""
     completion: "⭐⭐⭐⭐☆"
   - item_id: bbx-006
     product_code: BX-26
@@ -283,9 +283,9 @@ items:
       bit: ""
       strategy: "核心第三機；目標配裝尚未決定。"
     tmp:
-      ratchet: ""
-      bit: ""
-      strategy: ""
+      ratchet: 9-60
+      bit: GR
+      strategy: "目前零件池的極限連打配置；以 9-60 降低高度與 Ratchet 暴露，保留 GR 的連續 X Dash 攻勢。完整配對尚待實測。"
     completion: "⭐☆☆☆☆"
   - item_id: bbx-009
     product_code: UX-20
