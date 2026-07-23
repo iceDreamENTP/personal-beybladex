@@ -165,16 +165,16 @@ stock_part_sets:
       - 同事日本代購
   - item_id: bbx-012
     product_code: CX-00
-    source_name_zh: unknown
-    blade: unknown
+    source_name_zh: 飛馬
+    blade: Pegasus Blast
     status: owned
     org:
-      ratchet: unknown
-      bit: unknown
-    part_instances_confirmed: false
+      ratchet: "一體化，無獨立 Ratchet"
+      bit: ATr
+    part_instances_confirmed: true
     notes:
       - 同事日本代購；2026-07-24 到貨
-      - CX-00 完整商品身分與原廠零件待確認
+      - 活動限定 Metal Coat: Red
   - item_id: bbx-013
     product_code: CX-15
     source_name_zh: unknown

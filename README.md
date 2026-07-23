@@ -38,7 +38,7 @@
 | UX-20 | 女武神 | Glory Valkyrie | 路上 | 核心三機順位2 | ⭐☆☆☆☆ |
 | CX-13 | 龍王 | Bahamut Blitz BK | 路上 | 零件、備選 | ⭐☆☆☆☆ |
 | CX-12 | 鳳凰閃焰 | Phoenix Flare Z | 擁有 | 同事日本代購 | ⭐☆☆☆☆ |
-| CX-00 | unknown | unknown | 已持有 | 同事日本代購；完整款式待確認 | ⭐☆☆☆☆ |
+| CX-00 | 飛馬 | Pegasus Blast | 已持有 | 同事日本代購；活動限定 Metal Coat: Red、ATr | ⭐☆☆☆☆ |
 | CX-15 | unknown | Ragna Rage FE | 已持有 | 同事日本代購 | ⭐☆☆☆☆ |
 | UX-03 | 神杖 | Wizard Rod | 已持有 | 同事日本代購 | ⭐☆☆☆☆ |
 | CX-18-01 | unknown | Brachio Whip OW | 已持有 | 同事日本代購；隨機款已確認 | ⭐☆☆☆☆ |

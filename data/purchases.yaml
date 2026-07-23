@@ -128,7 +128,7 @@ records:
     received_date: 2026-07-15
     purchase_reason: unknown
   - item_id: bbx-012
-    name_zh: unknown
+    name_zh: 飛馬
     product_code: CX-00
     status: owned
     purchase_price_twd: 300

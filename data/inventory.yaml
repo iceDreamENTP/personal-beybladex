@@ -389,25 +389,25 @@ items:
     completion: "⭐☆☆☆☆"
   - item_id: bbx-012
     product_code: CX-00
-    name_zh: unknown
-    blade: unknown
+    name_zh: 飛馬
+    blade: Pegasus Blast
     status: owned
     status_zh: 已持有
     purchase_order: 9
     ordered_order: unknown
     purchase_price_twd: 300
-    random_variant: unknown
+    random_variant: false
     possible_variants: unknown
     confirmed_variant: unknown
     purchase_reason: unknown
     notes:
       - 同事日本代購
       - 2026-07-24 到貨
-      - CX-00 對應多款限定商品；目前未提供完整品名，不猜測實際款式與原廠零件
+      - 活動限定 Pegasus Blast ATr Metal Coat: Red
     org:
-      ratchet: unknown
-      bit: unknown
-      strategy: unknown
+      ratchet: "一體化，無獨立 Ratchet"
+      bit: ATr
+      strategy: "上下重疊的三枚金屬刃帶來重擊；Ratchet 一體型 Bit 會隨轉速改變軸尖，在後半段重新加速攻擊。"
     opt:
       ratchet: ""
       bit: ""
