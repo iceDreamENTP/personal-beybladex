@@ -1,5 +1,5 @@
 schema_version: 2
-last_updated: 2026-07-18
+last_updated: 2026-07-24
 currency: TWD
 configuration_model:
   org: "Original；Takara Tomy 原廠配置與官方設計策略。"
@@ -15,14 +15,14 @@ rules:
   meta_policy: "opt 不依網路 META 擅自覆蓋；實測可修正 opt，但需保留理由。"
 summary:
   counts:
-    owned: 7
-    ordered: 4
+    owned: 13
+    ordered: 3
     wishlist: 0
-    total: 11
+    total: 16
   spending_twd:
-    owned: 12500
-    ordered: 5100
-    total: 17600
+    owned: 15000
+    ordered: 4100
+    total: 19100
 items:
   - item_id: bbx-001
     product_code: BX-23
@@ -222,23 +222,25 @@ items:
       strategy: ""
     completion: "⭐☆☆☆☆"
   - item_id: bbx-007
-    product_code: BX-36
+    product_code: BX-36-01
     name_zh: 鯨魚
     blade: Whale Wave
-    status: ordered
-    status_zh: 路上
-    purchase_order: unknown
+    status: owned
+    status_zh: 已持有
+    purchase_order: 8
     ordered_order: 2
     purchase_price_twd: 1000
     random_variant: true
     possible_variants: 3
-    confirmed_variant: unknown
+    confirmed_variant: BX-36-01
     purchase_reason: unknown
     notes:
       - 隨機包3款
+      - 2026-07-21 到貨；使用者描述為淺藍款
+      - 官方未提供正式配色名，淺藍僅作實物辨識描述
     org:
-      ratchet: "未確認；主打款5-80"
-      bit: "未確認；主打款E"
+      ratchet: 5-80
+      bit: E
       strategy: "主打款為 Smash 攻擊，X Dash 時抬升軸心，從上方壓制"
     opt:
       ratchet: 5-50
@@ -372,6 +374,172 @@ items:
       ratchet: 9-80
       bit: WW
       strategy: "重厚連打刃配合抑制傾斜的軸心，在場地中央以連打削弱對手並伺機反擊。"
+    opt:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    dck:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    tmp:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    completion: "⭐☆☆☆☆"
+  - item_id: bbx-012
+    product_code: CX-00
+    name_zh: unknown
+    blade: unknown
+    status: owned
+    status_zh: 已持有
+    purchase_order: 9
+    ordered_order: unknown
+    purchase_price_twd: 300
+    random_variant: unknown
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    notes:
+      - 同事日本代購
+      - 2026-07-24 到貨
+      - CX-00 對應多款限定商品；目前未提供完整品名，不猜測實際款式與原廠零件
+    org:
+      ratchet: unknown
+      bit: unknown
+      strategy: unknown
+    opt:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    dck:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    tmp:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    completion: "⭐☆☆☆☆"
+  - item_id: bbx-013
+    product_code: CX-15
+    name_zh: unknown
+    blade: Ragna Rage FE
+    status: owned
+    status_zh: 已持有
+    purchase_order: 10
+    ordered_order: unknown
+    purchase_price_twd: 300
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    notes:
+      - 同事日本代購
+      - 2026-07-24 到貨
+    org:
+      ratchet: 4-55
+      bit: Y
+      strategy: "流線外形降低空氣阻力並維持穩定姿態，以減少自身消耗並削弱對手持久力。"
+    opt:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    dck:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    tmp:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    completion: "⭐☆☆☆☆"
+  - item_id: bbx-014
+    product_code: UX-03
+    name_zh: 神杖
+    blade: Wizard Rod
+    status: owned
+    status_zh: 已持有
+    purchase_order: 11
+    ordered_order: unknown
+    purchase_price_twd: 300
+    random_variant: false
+    possible_variants: unknown
+    confirmed_variant: unknown
+    purchase_reason: unknown
+    notes:
+      - 同事日本代購
+      - 2026-07-24 到貨
+    org:
+      ratchet: 5-70
+      bit: DB
+      strategy: "以外重心大徑 Blade 與帶圓盤配重的球形 Bit 提高離心力，專注持久性能。"
+    opt:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    dck:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    tmp:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    completion: "⭐☆☆☆☆"
+  - item_id: bbx-015
+    product_code: CX-18-01
+    name_zh: unknown
+    blade: Brachio Whip OW
+    status: owned
+    status_zh: 已持有
+    purchase_order: 12
+    ordered_order: unknown
+    purchase_price_twd: 300
+    random_variant: true
+    possible_variants: 3
+    confirmed_variant: CX-18-01
+    purchase_reason: unknown
+    notes:
+      - 同事日本代購
+      - 2026-07-24 到貨；隨機款確認為 CX-18-01
+    org:
+      ratchet: 5-70
+      bit: Nr
+      strategy: "分厚圓形且外重心的 Blade 搭配降低持久損耗的 Bit，發揮高持久性能。"
+    opt:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    dck:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    tmp:
+      ratchet: ""
+      bit: ""
+      strategy: ""
+    completion: "⭐☆☆☆☆"
+  - item_id: bbx-016
+    product_code: BX-50-01
+    name_zh: unknown
+    blade: Heavens Ring
+    status: owned
+    status_zh: 已持有
+    purchase_order: 13
+    ordered_order: unknown
+    purchase_price_twd: 300
+    random_variant: true
+    possible_variants: 6
+    confirmed_variant: BX-50-01
+    purchase_reason: unknown
+    notes:
+      - 同事日本代購
+      - 2026-07-24 到貨；隨機款確認為 BX-50-01
+    org:
+      ratchet: 0-80
+      bit: DS
+      strategy: "以圓形 Blade 分散衝擊，搭配容易在場地中央保持姿態的 Bit，從各方向承受攻擊。"
     opt:
       ratchet: ""
       bit: ""

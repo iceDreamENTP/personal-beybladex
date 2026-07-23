@@ -1,5 +1,5 @@
 schema_version: 2
-last_updated: 2026-07-18
+last_updated: 2026-07-24
 currency: TWD
 policy:
   configuration_model: "配裝資料統一使用 org / opt / dck / tmp。"
@@ -95,20 +95,21 @@ stock_part_sets:
       - 備選
       - 路上，未到貨前不得視為已持有
   - item_id: bbx-007
-    product_code: BX-36
+    product_code: BX-36-01
     source_name_zh: 鯨魚
     blade: Whale Wave
-    status: ordered
+    status: owned
     random_variant: true
     possible_variants: 3
-    confirmed_variant: unknown
+    confirmed_variant: BX-36-01
     org:
-      ratchet: "未確認；主打款5-80"
-      bit: "未確認；主打款E"
-    part_instances_confirmed: false
+      ratchet: 5-80
+      bit: E
+    part_instances_confirmed: true
     notes:
       - 隨機包3款
-      - 主打款資訊不得視為實際取得零件
+      - 2026-07-21 到貨；使用者描述為淺藍款
+      - 官方未提供正式配色名，淺藍僅作實物辨識描述
   - item_id: bbx-008
     product_code: CX-06-01
     source_name_zh: 狐狸
@@ -162,3 +163,65 @@ stock_part_sets:
     part_instances_confirmed: true
     notes:
       - 同事日本代購
+  - item_id: bbx-012
+    product_code: CX-00
+    source_name_zh: unknown
+    blade: unknown
+    status: owned
+    org:
+      ratchet: unknown
+      bit: unknown
+    part_instances_confirmed: false
+    notes:
+      - 同事日本代購；2026-07-24 到貨
+      - CX-00 完整商品身分與原廠零件待確認
+  - item_id: bbx-013
+    product_code: CX-15
+    source_name_zh: unknown
+    blade: Ragna Rage FE
+    status: owned
+    org:
+      ratchet: 4-55
+      bit: Y
+    part_instances_confirmed: true
+    notes:
+      - 同事日本代購；2026-07-24 到貨
+  - item_id: bbx-014
+    product_code: UX-03
+    source_name_zh: 神杖
+    blade: Wizard Rod
+    status: owned
+    org:
+      ratchet: 5-70
+      bit: DB
+    part_instances_confirmed: true
+    notes:
+      - 同事日本代購；2026-07-24 到貨
+  - item_id: bbx-015
+    product_code: CX-18-01
+    source_name_zh: unknown
+    blade: Brachio Whip OW
+    status: owned
+    random_variant: true
+    possible_variants: 3
+    confirmed_variant: CX-18-01
+    org:
+      ratchet: 5-70
+      bit: Nr
+    part_instances_confirmed: true
+    notes:
+      - 同事日本代購；2026-07-24 到貨
+  - item_id: bbx-016
+    product_code: BX-50-01
+    source_name_zh: unknown
+    blade: Heavens Ring
+    status: owned
+    random_variant: true
+    possible_variants: 6
+    confirmed_variant: BX-50-01
+    org:
+      ratchet: 0-80
+      bit: DS
+    part_instances_confirmed: true
+    notes:
+      - 同事日本代購；2026-07-24 到貨

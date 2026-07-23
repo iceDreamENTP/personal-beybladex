@@ -1,10 +1,10 @@
 schema_version: 1
-last_updated: 2026-07-18
+last_updated: 2026-07-24
 currency: TWD
 summary:
-  owned_spending_twd: 12500
-  ordered_spending_twd: 5100
-  total_spending_twd: 17600
+  owned_spending_twd: 15000
+  ordered_spending_twd: 4100
+  total_spending_twd: 19100
 records:
   - item_id: bbx-001
     name_zh: 紅鳳凰
@@ -74,14 +74,14 @@ records:
     purchase_reason: 為了零件
   - item_id: bbx-007
     name_zh: 鯨魚
-    product_code: BX-36
-    status: ordered
+    product_code: BX-36-01
+    status: owned
     purchase_price_twd: 1000
-    purchase_order: unknown
+    purchase_order: 8
     ordered_order: 2
     purchase_date: unknown
     seller: unknown
-    received_date: unknown
+    received_date: 2026-07-21
     purchase_reason: unknown
   - item_id: bbx-008
     name_zh: 狐狸
@@ -126,4 +126,59 @@ records:
     purchase_date: 2026-07-15
     seller: 同事日本代購
     received_date: 2026-07-15
+    purchase_reason: unknown
+  - item_id: bbx-012
+    name_zh: unknown
+    product_code: CX-00
+    status: owned
+    purchase_price_twd: 300
+    purchase_order: 9
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: 同事日本代購
+    received_date: 2026-07-24
+    purchase_reason: unknown
+  - item_id: bbx-013
+    name_zh: unknown
+    product_code: CX-15
+    status: owned
+    purchase_price_twd: 300
+    purchase_order: 10
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: 同事日本代購
+    received_date: 2026-07-24
+    purchase_reason: unknown
+  - item_id: bbx-014
+    name_zh: 神杖
+    product_code: UX-03
+    status: owned
+    purchase_price_twd: 300
+    purchase_order: 11
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: 同事日本代購
+    received_date: 2026-07-24
+    purchase_reason: unknown
+  - item_id: bbx-015
+    name_zh: unknown
+    product_code: CX-18-01
+    status: owned
+    purchase_price_twd: 300
+    purchase_order: 12
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: 同事日本代購
+    received_date: 2026-07-24
+    purchase_reason: unknown
+  - item_id: bbx-016
+    name_zh: unknown
+    product_code: BX-50-01
+    status: owned
+    purchase_price_twd: 300
+    purchase_order: 13
+    ordered_order: unknown
+    purchase_date: unknown
+    seller: 同事日本代購
+    received_date: 2026-07-24
     purchase_reason: unknown
